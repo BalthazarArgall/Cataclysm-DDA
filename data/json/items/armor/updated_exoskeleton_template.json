@@ -1,0 +1,116 @@
+[
+    {
+    "id": "",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str": "light combat exoskeleton" },
+    "description": "",
+    "weight": "20000 g",
+    "volume": "2500 ml",
+    "symbol": "[",
+    "looks_like": "power_armor_basic",
+    "color": "light_gray",
+    "price": 0,
+    "price_postapoc": 0,
+    "material": [ "steel" ],
+    "flags": [ "STURDY", "RAD_RESIST", "WATERPROOF", "RAINPROOF", "SUN_GLASSES", "USE_UPS", "NO_UNLOAD", "COMBAT_TOGGLEABLE" ],
+    "relic_data": { "passive_effects": [ { "id": "ench_climate_control_all" } ] },
+    "warmth": 40,
+    "environmental_protection": 10,
+    "armor": [
+      {
+        "layers": [ "SKINTIGHT" ],
+        "covers": [ "head", "torso", "arms", "hands", "legs", "feet" ],
+        "encumbrance": 0,
+        "coverage": 100,
+        "material": [ { "type": "lycra", "covered_by_mat": 100, "thickness": 0.2 } ],
+        "//": "Supports the cooling system. Similar to https://en.wikipedia.org/wiki/Liquid_cooling_and_ventilation_garment#/media/File:Lcvg.jpg."
+      },
+      {
+        "layers": [ "NORMAL" ],
+        "covers": [ "head", "torso", "arms", "hands", "legs", "feet" ],
+        "encumbrance": 0,
+        "coverage": 100,
+        "material": [ { "type": "nomex", "covered_by_mat": 100, "thickness": 0.8 } ],
+        "//": "Enclosed protective suit, similar to a flight suit but covers the whole body."
+      },
+      {
+        "layers": [ "NORMAL" ],
+        "covers": [ "eyes", "mouth" ],
+        "encumbrance": 0,
+        "coverage": 100,
+        "material": [ { "type": "lvl4ballisticglass", "covered_by_mat": 100, "thickness": 2 } ],
+        "//": "Transparent mask enclosing the suit, a tube connects it to a pump and filter system at the back of the exoskeleton."
+      },
+      {
+        "layers": [ "OUTER" ],
+        "covers": [ "head", "torso", "arms", "hands", "legs", "feet" ],
+        "encumbrance": 1,
+        "coverage": 10,
+        "material": [ { "type": "steel", "covered_by_mat": 100, "thickness": 20 } ],
+        "//": "The actual exoskeleton, also comprises the frame to support the armor parts."
+      }
+    ],
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+        "ablative": true,
+        "volume_encumber_modifier": 0,
+        "max_contains_volume": "4000 ml",
+        "max_contains_weight": "4 kg",
+        "moves": 200,
+        "description": "Hooks for an exoskeleton compatible helmet.",
+        "flag_restriction": [ "ABLATIVE_EXOSKELETON_HEAD" ]
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "ablative": true,
+        "volume_encumber_modifier": 0,
+        "max_contains_volume": "4000 ml",
+        "max_contains_weight": "4 kg",
+        "moves": 200,
+        "description": "Hooks for an armored skirt.",
+        "flag_restriction": [ "ABLATIVE_EXOSKELETON_TORSO" ]
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "ablative": true,
+        "volume_encumber_modifier": 0,
+        "max_contains_volume": "4000 ml",
+        "max_contains_weight": "4 kg",
+        "moves": 200,
+        "description": "Hooks for an armored skirt.",
+        "flag_restriction": [ "ABLATIVE_EXOSKELETON_ARMS" ]
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "ablative": true,
+        "volume_encumber_modifier": 0,
+        "max_contains_volume": "4000 ml",
+        "max_contains_weight": "4 kg",
+        "moves": 200,
+        "description": "Hooks for an armored skirt.",
+        "flag_restriction": [ "ABLATIVE_EXOSKELETON_LEGS" ]
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "ablative": true,
+        "volume_encumber_modifier": 0,
+        "max_contains_volume": "4000 ml",
+        "max_contains_weight": "4 kg",
+        "moves": 200,
+        "description": "Hooks for an armored skirt.",
+        "flag_restriction": [ "ABLATIVE_EXOSKELETON_LEGS" ]
+      }
+    ],
+    "ammo": "battery",
+    "use_action": {
+      "type": "transform",
+      "msg": "Initiating\nRunning suit integrity diagnostics…\nAll systems operational.",
+      "target": "phase_immersion_suit_on",
+      "active": true,
+      "need_charges": 1,
+      "need_charges_msg": "Warning: Operating on minimal power.  Protection compromised."
+    }
+  }
+]
