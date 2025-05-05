@@ -3,7 +3,7 @@
     "type": "martial_art",
     "id": "WW1BMA",
     "name": "British Forces",
-    "description": "Consisting of guards, thrusts, & stock bashes, this British martial art'll let you bash in skulls of the undead for the empire. Trades bashing damage for piercing & cutting damage in thrusts, & lets you compound attacks into an armor-crushing finish. Not particularly effective w/out a bayonet.",
+    "description": "Consisting of guards, thrusts, & stock bashes, this British martial art'll let you bash in skulls of the undead for the empire.  Trades bashing damage for piercing & cutting damage in thrusts, & lets you compound attacks into an armor-crushing finish.  Not particularly effective w/out a bayonet.",
     "initiate": [ "You point your gun forward, & stand at attention for the Queen", "<npcname> points their gun forward" ],
     "teachable": true,
     "allow_all_weapons": false,
