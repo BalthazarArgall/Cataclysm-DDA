@@ -34,6 +34,7 @@
 #include "construction.h"
 #include "coordinates.h"
 #include "creature_tracker.h"
+#include "current_map.h"
 #include "cursesdef.h"
 #include "debug.h"
 #include "dialogue.h"
@@ -6600,7 +6601,7 @@ void Character::mend_item( item_location &&obj, bool interactive )
             if( opts[menu.ret].second ) {
                 obj->remove_fault( opts[menu.ret].first );
             } else {
-                obj.set_fault( opts[menu.ret].first, true, false );
+                obj->set_fault( opts[menu.ret].first, true, false );
             }
         }
         return;
@@ -6669,7 +6670,7 @@ void Character::mend_item( item_location &&obj, bool interactive )
             auto tools = reqs.get_folded_tools_list( fold_width, col, inv );
             auto comps = reqs.get_folded_components_list( fold_width, col, inv, is_crafting_component );
 
-            std::string descr = word_rewrap( opt.fault->description(), 80 ) + "\n\n";
+            std::string descr = word_rewrap( obj.get_item()->get_fault_description( opt.fault ), 80 ) + "\n\n";
             for( const fault_id &fid : fix.faults_removed ) {
                 if( obj->has_fault( fid ) ) {
                     descr += string_format( _( "Removes fault: <color_green>%s</color>\n" ), fid->name() );
@@ -10594,6 +10595,8 @@ void Character::place_corpse( const tripoint_abs_omt &om_target )
 {
     tinymap bay;
     bay.load( om_target, false );
+    // Redundant as long as map operations aren't using get_map() in a transitive call chain. Added for future proofing.
+    swap_map swap( *bay.cast_to_map() );
     point_omt_ms fin( rng( 1, SEEX * 2 - 2 ), rng( 1, SEEX * 2 - 2 ) );
     // This makes no sense at all. It may find a random tile without furniture, but
     // if the first try to find one fails, it will go through all tiles of the map
