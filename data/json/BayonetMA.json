@@ -1,43 +1,38 @@
-[
-  {
-    "type": "martial_art",
-    "id": "WW1BMA",
-    "name": "British Forces",
-    "description": "Consisting of guards, thrusts, & stock bashes, this British martial art'll let you bash in skulls of the undead for the empire.  Trades bashing damage for piercing & cutting damage in thrusts, & lets you compound attacks into an armor-crushing finish.  Not particularly effective w/out a bayonet.",
-    "initiate": [ "You point your gun forward, & stand at attention for the Queen", "<npcname> points their gun forward" ],
-    "teachable": true,
-    "allow_all_weapons": false,
-    "strictly_melee": true,
-    "primary_skill": "???",
-    "learn_difficulty": 3,
-    "static_buffs": [
-      {
-        "id": "buff_WW1BMA_static",
-        "name": "Guard",
-        "description": "You are standing at guard and will hold the line, no matter what.\n\n+2 blocking effectiveness, +1 block attempt, -1.0 Dodging skill, blocked damage reduced by 50% of Strength.",
-        "melee_allowed": true,
-        "bonus_blocks": 1,
-        "flat_bonuses": [
-          { "stat": "block_effectiveness", "scale": 2.0 },
-          { "stat": "block", "scaling-stat": "str", "scale": 0.5 },
-          { "stat": "dodge", "scale": -1.0 }
-        ]
-      }
-    ],
-    "onpause_buffs": [
-      {
-        "id": "buff_bayonet_onpause",
-        "name": "Preparation to Hit",
-        "description": "You position your arms to savagely thrust your rifle through the enemy.\n\n+1 accuracy.  Lasts 2 turns.  Stacks 2 times.",
-        "unarmed_allowed": true,
-        "melee_allowed": true,
-        "skill_requirements": [ { "name": "melee", "level": 1 } ],
-        "max_stacks": 2,
-        "buff_duration": 2
-      }
-    ],
-    "oncrit_buffs": [
-      {
+{
+   "type": "martial_art",
+   "id": "WW1BMA",
+   "name": "British Forces",
+   "description": "Consisting of guards, thrusts, & stock bashes, this British martial art'll let you bash in skulls of the undead for the empire. Trades bashing damage for piercing & cutting damage in thrusts, & lets you compound attacks into an armor-crushing finish. Not particularly effective w/out a bayonet.",
+   "initiate": [ "You point your gun forward, & stand at attention for the Queen", "<npcname> points their gun forward" ],
+   "teachable": true,
+   "allow_all_weapons": false,
+   "strictly_melee": true,
+   "primary_skill": "rifles",
+   "priority": 1,
+   "learn_difficulty": 3,
+   "static_buffs": [ {
+      "id": "buff_WW1BMA_static",
+      "name": "Guard",
+      "description": "You are standing at guard and will hold the line, no matter what.\n\n+2 blocking effectiveness, +1 block attempt, -1.0 Dodging skill, blocked damage reduced by 50% of Strength.",
+      "melee_allowed": true,
+      "bonus_blocks": 1,
+      "flat_bonuses": [
+         { "stat": "block_effectiveness", "scale": 2.0 },
+         { "stat": "block", "scaling-stat": "str", "scale": 0.5 },
+         { "stat": "dodge", "scale": -1.25 }
+                      ]
+      } 
+   ],
+   "onpause_buffs": [ { 
+      "id": "buff_WW1BMA_onpause",
+      "name": "Preparation to Hit",
+      "description": "You position your arms to savagely thrust your rifle through the enemy.\n\n+1 accuracy.  Lasts 2 turns.  Stacks 2 times.",
+      "unarmed_allowed": true,
+      "melee_allowed": true,
+      "skill_requirements": [ { "name": "melee", "level": 1 } ],
+      "max_stacks": 2,
+      "buff_duration": 30 } ],
+   "oncrit_buffs": [ {
         "id": "WW1BMA_BUTTPREP",
         "name": "Buttstroke preparation",
         "description": "You stabbed them, now to bash their head in!\n\n+1 accuracy.  Lasts 2 turns.  Stacks 2 times.",
@@ -46,21 +41,17 @@
         "max_stacks": 2,
         "buff_duration": 2,
         "flat_bonuses": [ { "stat": "hit", "scale": 1.0 } ]
-      }
-    ],
-    "onblock_buffs": [
-      {
-        "id": "WW1BMA_PARRY",
-        "name": "Parry",
-        "description": "Your next strike will find its mark much easier after your parry.\n\n+1 accuracy.\nLasts 1 turn.",
-        "skill_requirements": [ { "name": "melee", "level": 4 } ],
-        "melee_allowed": true,
-        "buff_duration": 1,
-        "flat_bonuses": [ { "stat": "hit", "scale": 1.5 } ]
-      }
-    ],
-    "onkill_buffs": [ { "id": "placeholder", "name": "placeholder", "description": "placeholder" } ],
-    "weapon_category": [ "AUTOMATIC_RIFLES" ]
+        } ],
+   "onblock_buffs": [ {         
+       "id": "WW1BMA_PARRY",
+       "name": "Parry",
+       "description": "Your next strike will find its mark much easier after your parry.\n\n+1 accuracy.\nLasts 1 turn.",
+       "skill_requirements": [ { "name": "melee", "level": 4 } ],
+       "melee_allowed": true,
+       "buff_duration": 1,
+       "flat_bonuses": [ { "stat": "hit", "scale": 1.5 } ] } ],
+   "weapon_category": [ "AUTOMATIC_RIFLES" ],
+   "techniques": [ "WW1BMA_THRUST", "WW1BMA_THRUST1", "WW1BMA_STOCK_BASH", "WW1BMA_COMP" ]
   },
   {
     "type": "technique",
@@ -117,7 +108,7 @@
   {
     "type": "technique",
     "id": "WW1BMA_STOCK_BASH",
-    "name": "Brutal ",
+    "name": "Brutal stock bash",
     "melee_allowed": true,
     "crit_tec": true,
     "skill_requirements": [ { "name": "melee", "level": 5 } ],
