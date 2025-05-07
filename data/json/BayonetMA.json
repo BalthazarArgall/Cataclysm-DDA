@@ -131,13 +131,13 @@
     "required_buffs_any": [ "buff_WW1BMA_static" ],
     "skill_requirements": [ { "name": "melee", "level": 1 } ],
     "melee_allowed": true,
-    "weighting": 5,
     "mult_bonuses": [
       { "stat": "movecost", "scale": 0.5 },
       { "stat": "damage", "type": "bash", "scale": 0.1 },
       { "stat": "damage", "type": "cut", "scale": 0.66 },
       { "stat": "damage", "type": "stab", "scale": 0.66 }
-    ]
+    ],
+    "attack_vectors": [ "vector_null" ]
   },
   {
     "type": "technique",
