@@ -3038,6 +3038,8 @@ void iexamine::harvest_plant( Character &you, const tripoint_bub_ms &examp, bool
                     if( loc ) {
                         you.may_activity_occupancy_after_end_items_loc.push_back( loc );
                     }
+                } else {
+                    here.add_item_or_charges( you.pos_bub(), i );
                 }
             }
             here.furn_set( examp, furn_str_id( fp->base ) );
@@ -4110,7 +4112,7 @@ void iexamine::fvat_full( Character &you, const tripoint_bub_ms &examp )
 
     const std::string booze_name = brew_i.tname();
     item_location loc( map_cursor( examp ), &*items_here.begin() );
-    if( liquid_handler::handle_liquid( loc ) ) {
+    if( liquid_handler::handle_liquid( loc ) && loc->charges == 0 ) {
         fvat_set_empty( examp );
         add_msg( _( "You squeeze the last drops of %s from the vat." ), booze_name );
     }
