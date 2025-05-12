@@ -1,5 +1,15 @@
 [
   {
+    "id": "manual_WW1BMA",
+    "copy-from": "book_martial",
+    "looks_like": "manual_karate",
+    "type": "ITEM",
+    "subtypes": [ "BOOK" ],
+    "name": { "str": "British Armed Forces Bayonet Manual", "str_pl": "copies of British Armed Forces Bayonet Manual" },
+    "description": "This is an old field manual for bayonet procedures during WW1. The margins are covered w/ notes, & it seems well-read. Can be used w/out a bayonet, but it isn't effective.",
+    "martial_art": "WW1BMA"
+  },
+  {
     "type": "martial_art",
     "id": "WW1BMA",
     "name": "British Forces",
@@ -70,13 +80,15 @@
     "required_buffs_any": [ "buff_WW1BMA_static", "buff_fencing_onblock" ],
     "skill_requirements": [ { "name": "melee", "level": 5 } ],
     "messages": [ "You run the %s right on through!", "<npcname> runs through the %s" ],
-    "attack_vectors": [ "vector_null" ],
+    "melee_allowed": true,
     "aoe": "impale",
+    "weighting": 0.75,
     "flat_bonuses": [
       { "stat": "damage", "type": "bash", "scale": 0.3 },
       { "stat": "damage", "type": "stab", "scaling-stat": "str", "scale": 1.5 },
       { "stat": "damage", "type": "cut", "scaling-stat": "str", "scale": 1.5 }
-    ]
+                    ],
+    "attack_vectors": [ "vector_null" ]
   },
   {
     "type": "technique",
@@ -97,8 +109,8 @@
     },
     "condition_desc": "* Only works on a <info>non-downed humanoid</info> target of <info>similar or smaller</info> size incapable of flight",
     "messages": [ "You pin %s to the floor", "<npcname> pins %s to the floor" ],
-    "down_dur": 3,
-    "description": "Down 3 turns, min 2 melee",
+    "down_dur": 6,
+    "description": "Down 6 turns, min 3 melee",
     "attack_vectors": [ "vector_null" ]
    },
    {
@@ -108,7 +120,7 @@
     "melee_allowed": true,
     "reach_ok": true,
     "skill_requirements": [ { "name": "melee", "level": 4 } ],
-    "condition": { { "npc_has_effect": "downed" } },
+    "condition": { "npc_has_effect": "downed" },
     "mult_bonuses": [
       { "stat": "movecost", "scale": 0.75 }
                     ],
@@ -145,6 +157,7 @@
     "required_buffs_any": [ "buff_WW1BMA_static" ],
     "skill_requirements": [ { "name": "melee", "level": 1 } ],
     "melee_allowed": true,
+    "weighting": 0.33,
     "mult_bonuses": [
       { "stat": "movecost", "scale": 0.5 },
       { "stat": "damage", "type": "bash", "scale": 0.1 },
