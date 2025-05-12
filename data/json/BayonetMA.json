@@ -61,7 +61,7 @@
       }
     ],
     "weapon_category": [ "AUTOMATIC_RIFLES" ],
-    "techniques": [ "WW1BMA_THRUST", "WW1BMA_THRUST1", "WW1BMA_STOCK_BASH", "WW1BMA_COMP", "WWIBMA_PIN" ]
+    "techniques": [ "WW1BMA_THRUST", "WW1BMA_THRUST1", "WW1BMA_STOCK_BASH", "WW1BMA_COMP", "WW1BMA_PIN" ]
   },
   {
     "type": "technique",
@@ -80,13 +80,12 @@
   },
   {
     "type": "technique",
-    "id": "WWIBMA_PIN",
+    "id": "WW1BMA_PIN",
     "name": "Pin 'em!",
     "melee_allowed": true,
     "reach_ok": true,
-    "skill_requirements": [ { "name": "melee", "level": 2 } ],
+    "skill_requirements": [ { "name": "melee", "level": 3 } ],
     "//condition": "Humanoids of similar size and no flying",
-    "weighting": 2,
     "condition": {
       "and": [
         { "math": [ "u_val('size') + 1 >= n_val('size')" ] },
@@ -101,7 +100,22 @@
     "down_dur": 3,
     "description": "Down 3 turns, min 2 melee",
     "attack_vectors": [ "vector_null" ]
-  },
+   },
+   {
+    "type": "technique",
+    "id": "WW1BMA_AFTERPIN",
+    "name": "Withdrawl",
+    "melee_allowed": true,
+    "reach_ok": true,
+    "skill_requirements": [ { "name": "melee", "level": 4 } ],
+    "condition": { { "npc_has_effect": "downed" } },
+    "mult_bonuses": [
+      { "stat": "movecost", "scale": 0.75 }
+                    ],
+    "messages": [ "You slice %s as they're down!", "<npcname> slices %s as they're down!" ],
+    "description": "After pinning them, you slice them for a movecost buff",
+    "attack_vectors": [ "vector_null" ]
+   },
   {
     "type": "technique",
     "id": "WW1BMA_COMP",
