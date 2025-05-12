@@ -61,7 +61,7 @@
       }
     ],
     "weapon_category": [ "AUTOMATIC_RIFLES" ],
-    "techniques": [ "WW1BMA_THRUST", "WW1BMA_THRUST1", "WW1BMA_STOCK_BASH", "WW1BMA_COMP", "WW1BMA_PIN" ]
+    "techniques": [ "WW1BMA_THRUST", "WW1BMA_THRUST1", "WW1BMA_STOCK_BASH", "WW1BMA_COMP", "WW1BMA_PIN", "WW1BMA_AFTERPIN" ]
   },
   {
     "type": "technique",
