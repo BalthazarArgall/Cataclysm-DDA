@@ -28,7 +28,8 @@
         "max_contains_volume": "200 l",
         "max_contains_weight": "200 k",
         "moves": 60000,
-        "max_item_length": "100 cm"
+        "max_item_length": "100 cm",
+        "holster": true
       },
       {
         "pocket_type": "CONTAINER",
@@ -39,7 +40,8 @@
         "max_contains_volume": "200 l",
         "max_contains_weight": "200 k",
         "moves": 60000,
-        "max_item_length": "100 cm"
+        "max_item_length": "100 cm",
+        "holster": true
       },
       {
         "pocket_type": "CONTAINER",
@@ -50,7 +52,8 @@
         "max_contains_volume": "200 l",
         "max_contains_weight": "200 k",
         "moves": 60000,
-        "max_item_length": "100 cm"
+        "max_item_length": "100 cm",
+        "holster": true
       },
       {
         "pocket_type": "CONTAINER",
@@ -61,7 +64,8 @@
         "max_contains_volume": "200 l",
         "max_contains_weight": "200 k",
         "moves": 60000,
-        "max_item_length": "100 cm"
+        "max_item_length": "100 cm",
+        "holster": true
       }
     ],
     "warmth": 5,
@@ -105,7 +109,8 @@
         "max_contains_volume": "200 l",
         "max_contains_weight": "200 k",
         "moves": 60000,
-        "max_item_length": "100 cm"
+        "max_item_length": "100 cm",
+        "holster": true
       },
       {
         "pocket_type": "CONTAINER",
@@ -116,7 +121,8 @@
         "max_contains_volume": "200 l",
         "max_contains_weight": "200 k",
         "moves": 60000,
-        "max_item_length": "10 cm"
+        "max_item_length": "10 cm",
+        "holster": true
       },
       {
         "pocket_type": "CONTAINER",
@@ -127,7 +133,8 @@
         "max_contains_volume": "200 l",
         "max_contains_weight": "200 k",
         "moves": 60000,
-        "max_item_length": "10 cm"
+        "max_item_length": "10 cm",
+        "holster": true
       },
       {
         "pocket_type": "CONTAINER",
@@ -138,7 +145,8 @@
         "max_contains_volume": "200 l",
         "max_contains_weight": "200 k",
         "moves": 60000,
-        "max_item_length": "10 cm"
+        "max_item_length": "10 cm",
+        "holster": true
       }
     ],
     "warmth": 10,
