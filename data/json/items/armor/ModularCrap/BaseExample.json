@@ -1,0 +1,11 @@
+[
+  {
+    "copy-from": "jacket_leather",
+    "id": "SomeModuCoat",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
+    "name": { "str": "Modular Debug Jacket" },
+    "description": "A jacket stripped of all it's parts, just an empty hollow. Insert your desired parts, & create a nice jacket. This one feels debuggy.",
+    "//": "The above code is all that's needed to have a functional item if we use copy-from"
+  }
+]
