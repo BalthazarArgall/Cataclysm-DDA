@@ -1,5 +1,5 @@
 [
-   {
+  {
     "id": "ModuCoatBase",
     "type": "ITEM",
     "subtypes": [ "ARMOR" ],
@@ -22,10 +22,10 @@
       {
         "pocket_type": "CONTAINER",
         "ablative": true,
-	"//": "Utility pocket, should be able to hold the ABSOLUTE max that the inserts can hold. No less, no more."
+        "//": "Utility pocket, should be able to hold the ABSOLUTE max that the inserts can hold. No less, no more.",
         "description": "Stitching for a special utility slot",
         "flag_restriction": [ "COAT_UTILITY_PLACEHOLD" ],
-	"//": "Huge values are temporary, for now"
+        "//": "Huge values are temporary, for now",
         "max_contains_volume": "200 l",
         "max_contains_weight": "200 k",
         "moves": 60000,
@@ -35,10 +35,10 @@
       {
         "pocket_type": "CONTAINER",
         "ablative": true,
-	"//": "Armband pocket, should be able to hold the ABSOLUTE max that the inserts can hold. No less, no more."
+        "//": "Armband pocket, should be able to hold the ABSOLUTE max that the inserts can hold. No less, no more.",
         "flag_restriction": [ "ARMBAND_PLACEHOLD" ],
         "description": "Stitching for putting on an armband.",
-	"//": "Huge values are temporary, for now",
+        "//": "Huge values are temporary, for now",
         "max_contains_volume": "200 l",
         "max_contains_weight": "200 k",
         "moves": 60000,
@@ -48,10 +48,10 @@
       {
         "pocket_type": "CONTAINER",
         "ablative": true,
-	"//": "Liner pocket, should be able to hold the ABSOLUTE max that the inserts can hold. No less, no more."
+        "//": "Liner pocket, should be able to hold the ABSOLUTE max that the inserts can hold. No less, no more.",
         "description": "Stitching for a liner",
         "flag_restriction": [ "COAT_LINER_PLACEHOLD" ],
-	"//": "Huge values are temporary, for now"
+        "//": "Huge values are temporary, for now",
         "max_contains_volume": "200 l",
         "max_contains_weight": "200 k",
         "moves": 60000,
@@ -61,10 +61,10 @@
       {
         "pocket_type": "CONTAINER",
         "ablative": true,
-	"//": "Filler pocket, should be able to hold the ABSOLUTE max that the inserts can hold. No less, no more."
+        "//": "Filler pocket, should be able to hold the ABSOLUTE max that the inserts can hold. No less, no more.",
         "description": "Stitching for a filler",
         "flag_restriction": [ "COAT_FILLER_PLACEHOLD" ],
-	"//": "Huge values are temporary, for now"
+        "//": "Huge values are temporary, for now",
         "max_contains_volume": "200 l",
         "max_contains_weight": "200 k",
         "moves": 60000,
@@ -74,10 +74,10 @@
       {
         "pocket_type": "CONTAINER",
         "ablative": true,
-	"//": "Backing pocket, should be able to hold the ABSOLUTE max that the inserts can hold. No less, no more."
+        "//": "Backing pocket, should be able to hold the ABSOLUTE max that the inserts can hold. No less, no more.",
         "description": "Stitching for the backing of the coat",
         "flag_restriction": [ "COAT_BACKER_PLACEHOLD" ],
-	"//": "Huge values are temporary, for now"
+        "//": "Huge values are temporary, for now",
         "max_contains_volume": "200 l",
         "max_contains_weight": "200 k",
         "moves": 60000,
@@ -89,15 +89,15 @@
     "material_thickness": 1.0,
     "environmental_protection": 2,
     "flags": [ "POCKETS", "OUTER" ]
-   },
-   {
+  },
+  {
     "id": "ModuCoatMutBase",
     "copy-from": "ModuCoatBase",
     "name": { "str": "Modular Da Bug Mutant Jacket" },
     "description": "A jacket stripped of all it's parts, just an empty hollow for your new, beautiful form to go into. Insert your desired cloth, & create a nice jacket. This one feels more debuggy than the other one.",
     "flags": [ "POCKETS", "OUTER", "ALLOW_NATURAL_ATTACKS" ]
-   },
-   {
+  },
+  {
     "id": "ModuBombBase",
     "type": "ITEM",
     "subtypes": [ "ARMOR" ],
@@ -120,10 +120,10 @@
       {
         "pocket_type": "CONTAINER",
         "ablative": true,
-	"//": "Utility pocket, should be able to hold the ABSOLUTE max that the inserts can hold. No less, no more."
+        "//": "Utility pocket, should be able to hold the ABSOLUTE max that the inserts can hold. No less, no more.",
         "description": "Stitching for a special utility slot, putting water-resistant inserts are useless on this jacket",
         "flag_restriction": [ "COAT_UTILITY_PLACEHOLD" ],
-	"//": "Huge values are temporary, for now"
+        "//": "Huge values are temporary, for now",
         "max_contains_volume": "200 l",
         "max_contains_weight": "200 k",
         "moves": 60000,
@@ -133,10 +133,10 @@
       {
         "pocket_type": "CONTAINER",
         "ablative": true,
-	"//": "Armband pocket, should be able to hold the ABSOLUTE max that the inserts can hold. No less, no more."
+        "//": "Armband pocket, should be able to hold the ABSOLUTE max that the inserts can hold. No less, no more.",
         "flag_restriction": [ "ARMBAND_PLACEHOLD" ],
         "description": "Stitching for putting on an armband.",
-	"//": "Huge values are temporary, for now",
+        "//": "Huge values are temporary, for now",
         "max_contains_volume": "200 l",
         "max_contains_weight": "200 k",
         "moves": 60000,
@@ -146,10 +146,10 @@
       {
         "pocket_type": "CONTAINER",
         "ablative": true,
-	"//": "Liner pocket, should be able to hold the ABSOLUTE max that the inserts can hold. No less, no more."
+        "//": "Liner pocket, should be able to hold the ABSOLUTE max that the inserts can hold. No less, no more.",
         "description": "Stitching for a liner",
         "flag_restriction": [ "COAT_LINER_PLACEHOLD" ],
-	"//": "Huge values are temporary, for now",
+        "//": "Huge values are temporary, for now",
         "max_contains_volume": "200 l",
         "max_contains_weight": "200 k",
         "moves": 60000,
@@ -159,10 +159,10 @@
       {
         "pocket_type": "CONTAINER",
         "ablative": true,
-	"//": "Filler pocket, should be able to hold the ABSOLUTE max that the inserts can hold. No less, no more."
+        "//": "Filler pocket, should be able to hold the ABSOLUTE max that the inserts can hold. No less, no more.",
         "description": "Stitching for a filler",
         "flag_restriction": [ "COAT_FILLER_PLACEHOLD" ],
-	"//": "Huge values are temporary, for now",
+        "//": "Huge values are temporary, for now",
         "max_contains_volume": "200 l",
         "max_contains_weight": "200 k",
         "moves": 60000,
@@ -172,10 +172,10 @@
       {
         "pocket_type": "CONTAINER",
         "ablative": true,
-	"//": "Backing pocket, should be able to hold the ABSOLUTE max that the inserts can hold. No less, no more."
+        "//": "Backing pocket, should be able to hold the ABSOLUTE max that the inserts can hold. No less, no more.",
         "description": "Stitching for the backing of the coat",
         "flag_restriction": [ "COAT_BACKER_PLACEHOLD" ],
-	"//": "Huge values are temporary, for now",
+        "//": "Huge values are temporary, for now",
         "max_contains_volume": "200 l",
         "max_contains_weight": "200 k",
         "moves": 60000,
@@ -187,124 +187,124 @@
     "material_thickness": 0.375,
     "environmental_protection": 3,
     "flags": [ "POCKETS", "OUTER", "RAINPROOF", "COLLAR" ]
-   },
-   {
+  },
+  {
     "id": "ModuBombMutBase",
     "copy-from": "ModuBombBase",
     "name": { "str": "Modular Da Bug Mutant Jacket" },
     "description": "A jacket stripped of all it's parts, but also some additional waterproofing, breathability, & environmental protection, at the cost of weight & encumbrance. Insert your desired parts, & create a nice bomber, perfectly fit for a beautiful critter like yourself.",
     "flags": [ "POCKETS", "OUTER", "RAINPROOF", "COLLAR", "ALLOW_NATURAL_ATTACKS" ]
-   },
-   {
-    "id": "ModuCoat_Cott"
+  },
+  {
+    "id": "ModuCoat_Cott",
     "copy-from": "ModuCoatBase",
     "name": { "str": "Modular Standard Scav Jacket" },
     "description": "An average cotton jacket stripped of all it's parts, just an empty hollow. Insert your desired cloth, & create a nice jacket.",
     "material": [ "cotton" ]
-   },
-   {
-    "id": "ModuCoatMut_Cott"
+  },
+  {
+    "id": "ModuCoatMut_Cott",
     "copy-from": "ModuCoatMutBase",
     "name": { "str": "Modular Standard Mutant Jacket" },
     "description": "An average cotton jacket stripped of all it's parts, just an empty hollow for your new, beautiful form to crawl into. Insert your desired cloth, & create a nice jacket.",
     "material": [ "cotton" ]
-   },
-   {
-    "id": "Modu_Cott_Bomb"
+  },
+  {
+    "id": "Modu_Cott_Bomb",
     "copy-from": "ModuBombBase",
     "name": { "str": "Modular Standard Nomad Bomber" },
     "description": "A standard cotton bomber stripped of all it's parts, but also some additional waterproofing, breathability, & environmental protection, at the cost of weight & encumbrance. Insert your desired parts, & create a nice bomber, perfectly fit to your needs.",
     "material": [ "cotton" ]
-   },
-   {
-    "id": "Modu_Cott_BombMut"
+  },
+  {
+    "id": "Modu_Cott_BombMut",
     "copy-from": "ModuBombMutBase",
     "name": { "str": "Modular Standard Mutant Bomber" },
     "description": "A standard cotton bomber stripped of all it's parts, but also some additional waterproofing, breathability, & environmental protection, at the cost of weight & encumbrance. Insert your desired parts, & create a nice bomber, perfectly fit for a beautiful critter like yourself.",
     "material": [ "cotton" ]
-   },
-   {
-    "id": "ModuCoat_Nyl"
+  },
+  {
+    "id": "ModuCoat_Nyl",
     "copy-from": "ModuCoatBase",
     "name": { "str": "Modular Synthetic Scav Jacket" },
     "description": "A synthetic fabric jacket stripped of all it's parts, just an empty hollow. Insert your desired cloth, & create a nice jacket.",
     "material": [ "nylon" ]
-   },
-   {
-    "id": "ModuCoatMut_Nyl"
+  },
+  {
+    "id": "ModuCoatMut_Nyl",
     "copy-from": "ModuCoatMutBase",
     "name": { "str": "Modular Synthetic Mutant Jacket" },
     "description": "A synthetic fabric jacket stripped of all it's parts, just an empty hollow for your new, beautiful form to crawl into. Insert your desired cloth, & create a nice jacket.",
     "material": [ "nylon" ]
-   },
-   {
-    "id": "Modu_Nyl_Bomb"
+  },
+  {
+    "id": "Modu_Nyl_Bomb",
     "copy-from": "ModuBombBase",
     "name": { "str": "Modular Synthetic Nomad Bomber" },
     "description": "A synthetic nylon bomber stripped of all it's parts, but also some additional waterproofing, breathability, & environmental protection, at the cost of weight & encumbrance. Insert your desired parts, & create a nice bomber, perfectly fit to your needs.",
     "material": [ "nylon" ]
-   },
-   {
-    "id": "Modu_Nyl_BombMut"
+  },
+  {
+    "id": "Modu_Nyl_BombMut",
     "copy-from": "ModuBombMutBase",
     "name": { "str": "Modular Standard Mutant Bomber" },
     "description": "A synthetic nylon bomber stripped of all it's parts, but also some additional waterproofing, breathability, & environmental protection, at the cost of weight & encumbrance. Insert your desired parts, & create a nice bomber, perfectly fit for a beautiful critter like yourself.",
     "material": [ "nylon" ]
-   },
-   {
-    "id": "ModuCoat_Leather"
+  },
+  {
+    "id": "ModuCoat_Leather",
     "copy-from": "ModuCoatBase",
     "name": { "str": "Modular Leather Scav Jacket" },
     "description": "A proper leather jacket stripped of all it's parts, just an empty hollow. Insert your desired cloth, & create a nice jacket.",
     "material": [ "leather" ]
-   },
-   {
-    "id": "ModuCoatMut_Leather"
+  },
+  {
+    "id": "ModuCoatMut_Leather",
     "copy-from": "ModuCoatMutBase",
     "name": { "str": "Modular Leather Mutant Jacket" },
     "description": "A proper leather jacket stripped of all it's parts, just an empty hollow for your new, beautiful form to crawl into. Insert your desired cloth, & create a nice jacket.",
     "material": [ "leather" ]
-   },
-   {
-    "id": "Modu_Leather_Bomb"
+  },
+  {
+    "id": "Modu_Leather_Bomb",
     "copy-from": "ModuBombBase",
     "name": { "str": "Modular Leather Nomad Bomber" },
     "description": "A top-cut leather bomber stripped of all it's parts, but also some additional waterproofing, breathability, & environmental protection, at the cost of weight & encumbrance. Insert your desired parts, & create a nice bomber, perfectly fit to your needs.",
     "material": [ "leather" ]
-   },
-   {
-    "id": "Modu_Leather_BombMut"
+  },
+  {
+    "id": "Modu_Leather_BombMut",
     "copy-from": "ModuBombMutBase",
     "name": { "str": "Modular Leather Mutant Bomber" },
     "description": "A top-cut leather bomber stripped of all it's parts, but also some additional waterproofing, breathability, & environmental protection, at the cost of weight & encumbrance. Insert your desired parts, & create a nice bomber, perfectly fit for a beautiful critter like yourself.",
     "material": [ "leather" ]
-   },
-   {
-    "id": "ModuCoat_Kevlar"
+  },
+  {
+    "id": "ModuCoat_Kevlar",
     "copy-from": "ModuCoatBase",
     "name": { "str": "Modular Kevlar Scav Jacket" },
     "description": "A protective kevlar jacket stripped of all it's parts, just an empty hollow. Insert your desired cloth, & create a nice jacket.",
     "material": [ "kevlar" ]
-   },
-   {
-    "id": "ModuCoatMut_Kevlar"
+  },
+  {
+    "id": "ModuCoatMut_Kevlar",
     "copy-from": "ModuCoatMutBase",
     "name": { "str": "Modular Kevlar Mutant Jacket" },
     "description": "A protective kevlar jacket stripped of all it's parts, just an empty hollow for your new, beautiful form to crawl into. Insert your desired cloth, & create a nice jacket.",
     "material": [ "kevlar" ]
-   },
-   {
-    "id": "Modu_Kevlar_Bomb"
+  },
+  {
+    "id": "Modu_Kevlar_Bomb",
     "copy-from": "ModuBombBase",
     "name": { "str": "Modular Kevlar Nomad Bomber" },
     "description": "A tough kevlar bomber stripped of all it's parts, but also some additional waterproofing, breathability, & environmental protection, at the cost of weight & encumbrance. Insert your desired parts, & create a nice bomber, perfectly fit to your needs.",
     "material": [ "kevlar" ]
-   },
-   {
-    "id": "Modu_Kevlar_BombMut"
+  },
+  {
+    "id": "Modu_Kevlar_BombMut",
     "copy-from": "ModuBombMutBase",
     "name": { "str": "Modular Kevlar Mutant Bomber" },
     "description": "A tough kevlar bomber stripped of all it's parts, but also some additional waterproofing, breathability, & environmental protection, at the cost of weight & encumbrance. Insert your desired parts, & create a nice bomber, perfectly fit for a beautiful critter like yourself.",
     "material": [ "kevlar" ]
-   }
+  }
 ]
