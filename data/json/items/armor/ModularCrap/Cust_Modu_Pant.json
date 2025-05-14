@@ -16,6 +16,7 @@
     "pocket_data": [
       {
         "pocket_type": "CONTAINER",
+        "ablative": true,
 	"//": "Liner pocket, should be able to hold the ABSOLUTE max that the inserts can hold. No less, no more."
         "flag_restriction": [ "PANTS_LINER_PLACEHOLD" ],
         "description": "Stitching for a liner",
@@ -28,6 +29,7 @@
       },
       {
         "pocket_type": "CONTAINER",
+        "ablative": true,
 	"//": "Filler pocket, should be able to hold the ABSOLUTE max that the inserts can hold. No less, no more."
         "description": "Stitching for a filler",
         "flag_restriction": [ "PANTS_FILLER_PLACEHOLD" ],
@@ -40,6 +42,7 @@
       },
       {
         "pocket_type": "CONTAINER",
+        "ablative": true,
 	"//": "Liner pocket, should be able to hold the ABSOLUTE max that the inserts can hold. No less, no more."
         "description": "Stitching for the backing of the coat",
         "flag_restriction": [ "PANTS_FILLER_PLACEHOLD" ],
@@ -52,6 +55,7 @@
       },
       {
         "pocket_type": "CONTAINER",
+        "ablative": true,
 	"//": "Utility pocket, should be able to hold the ABSOLUTE max that the inserts can hold. No less, no more."
         "description": "Stitching for the backing of the coat",
         "flag_restriction": [ "PANTS_UTILITY_PLACEHOLD" ]
