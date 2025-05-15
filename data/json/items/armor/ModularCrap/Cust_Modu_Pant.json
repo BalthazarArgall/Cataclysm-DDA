@@ -14,41 +14,38 @@
    "looks_like": "jeans",
    "color": "brown",
    "pocket_data": [
-      {
-        "pocket_type": "CONTAINER",
-        "ablative": true,
-	"//": "Filler pocket, should be able to hold the ABSOLUTE max that the inserts can hold. No less, no more."
-        "description": "Stitching for a filler",
-        "flag_restriction": [ "PANTS_FILLER" ],
-	"//": "Huge values are temporary, for now",
-        "max_contains_volume": "200 l",
-        "max_contains_weight": "200 k",
-        "moves": 60000,
-        "max_item_length": "100 cm",
-        "holster": true
-      },
-      {
-        "pocket_type": "CONTAINER",
-        "ablative": true,
-	"//": "Liner pocket, should be able to hold the ABSOLUTE max that the inserts can hold. No less, no more."
-        "description": "Stitching for the lining of the trousers",
-        "flag_restriction": [ "PANTS_LINER" ],
-	"//": "Huge values are temporary, for now",
-        "max_contains_volume": "200 l",
-        "max_contains_weight": "200 k",
-        "moves": 60000,
-        "max_item_length": "100 cm",
-        "holster": true
-      },
-      {
-        "pocket_type": "CONTAINER",
-        "ablative": true,
-	"//": "Utility pocket, should be able to hold the ABSOLUTE max that the inserts can hold. No less, no more."
-        "description": "Stitching for putting utility features",
-        "flag_restriction": [ "PANTS_UTILITY" ]
-      "//": "Huge values are temporary, for now"
-      "max_contains_volume": "200 l",
-      "max_contains_weight": "200 k",
+     {
+      "pocket_type": "CONTAINER",
+      "ablative": true,
+      "//": "Filler pocket, should be able to hold the ABSOLUTE max that the inserts can hold. No less, no more. Huge values are temporary, for now",
+      "description": "Stitching for a filler",
+      "flag_restriction": [ "PANTS_FILLER" ],
+      "max_contains_volume": "200 L",
+      "max_contains_weight": "200 kg",
+      "moves": 60000,
+      "max_item_length": "100 cm",
+      "holster": true
+     },
+     {
+      "pocket_type": "CONTAINER",
+      "ablative": true,
+      "//": "Liner pocket, should be able to hold the ABSOLUTE max that the inserts can hold. No less, no more. Huge values are temporary, for now",
+      "description": "Stitching for the lining of the trousers",
+      "flag_restriction": [ "PANTS_LINER" ],
+      "max_contains_volume": "200 L",
+      "max_contains_weight": "200 kg",
+      "moves": 60000,
+      "max_item_length": "100 cm",
+      "holster": true
+     },
+     {
+      "pocket_type": "CONTAINER",
+      "ablative": true,
+      "//": "Utility pocket, should be able to hold the ABSOLUTE max that the inserts can hold. No less, no more. Huge values are temporary, for now",
+      "description": "Stitching for putting utility features",
+      "flag_restriction": [ "PANTS_UTILITY" ]
+      "max_contains_volume": "200 L",
+      "max_contains_weight": "200 kg",
       "moves": 60000,
       "max_item_length": "100 cm",
       "holster": true
@@ -61,6 +58,8 @@
   },
   {
    "id": "ModuPantsMut_Base",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
    "copy-from": "ModuPants_Base",
    "name": "Modular BUG Pants",
    "description": "A pair of pants that've been ripped of most of it's contents, they fit your new legs *perfectly*. Stitch in fabric according to needs & haves. These ones are made of bugs, & you're not supposed to have them.",
@@ -68,6 +67,8 @@
   },
   {
    "id": "ModuPants_Cott",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
    "copy-from": "ModuPants_Base",
    "name": "Pair of Modular Cotton Scav Pants",
    "description": "A standard pair of cotton pants that've been ripped of most of it's contents. Stitch in fabric according to needs & haves.",
@@ -75,6 +76,8 @@
   },
   {
    "id": "ModuPantsMut_Cott",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
    "copy-from": "ModuPantsMut_Base",
    "name": "Pair of Modular Cotton Mutant Pants",
    "description": "A standard pair of cotton pants that've been ripped of most of it's contents. They fit your new legs *perfectly*, & they're comfortable too. Stitch in fabric according to needs & haves.",
@@ -82,6 +85,8 @@
   },
   {
    "id": "ModuPants_Synth",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
    "copy-from": "ModuPants_Base",
    "name": "Pair of Modular Synthetic Scav Pants",
    "description": "A cheap pair of synthetic fabric pants that've been ripped of most of it's contents. Stitch in fabric according to needs & haves.",
@@ -89,6 +94,8 @@
   },
   {
    "id": "ModuPantsMut_Synth",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
    "copy-from": "ModuPantsMut_Base",
    "name": "Pair of Modular Synthetic Mutant Pants",
    "description": "A cheap pair of synthetic pants that've been ripped of most of it's contents. They fit your new legs *perfectly*, & stretch accordingly. Stitch in fabric according to needs & haves.",
@@ -96,6 +103,8 @@
   },
   {
    "id": "ModuPants_Canvas",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
    "copy-from": "ModuPants_Base",
    "name": "Pair of Modular Canvas Scav Pants",
    "description": "A tough pair of canvas pants that've been ripped of most of it's contents. Stitch in fabric according to needs & haves.",
@@ -103,6 +112,8 @@
   },
   {
    "id": "ModuPantsMut_Canvas",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
    "copy-from": "ModuPantsMut_Base",
    "name": "Pair of Modular Canvas Mutant Pants",
    "description": "A tough pair of canvas pants that've been ripped of most of it's contents. They fit your new legs *perfectly*, & protects them from being maimed. Stitch in fabric according to needs & haves.",
