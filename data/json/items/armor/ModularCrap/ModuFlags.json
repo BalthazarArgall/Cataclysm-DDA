@@ -4,8 +4,17 @@
     "id": "ARMBAND"
   },
   {
+<<<<<<< Updated upstream
     "type": "json_flag",
     "id": "BACK_ART"
+=======
+   "type": "json_flag",
+   "id": "BACK_ART"
+  },
+  {
+   "type": "json_flag",
+   "id": "COAT_BACKER"
+>>>>>>> Stashed changes
   },
   {
     "type": "json_flag",

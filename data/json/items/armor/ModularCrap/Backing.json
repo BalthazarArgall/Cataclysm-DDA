@@ -1,15 +1,29 @@
-[
-  {
-    "id": "CoatBack_Base",
+[  {
+    "id": "CoatBack_Stripped",
     "type": "ITEM",
     "subtypes": [ "ARMOR" ],
-    "name": "Buggy back",
-    "description": "The backing for jacket, made from BUGS.",
     "weight": "1500 g",
     "volume": "2000 ml",
     "price": "5 USD",
     "price_postapoc": "10 USD 50 cent",
     "material": [ "cotton" ],
+    "armor": [
+      { "covers": [ "torso" ], "specifically_covers": [ "torso_lower" ], "coverage": 100, "encumbrance": [ 2, 2] },
+      { "covers": [ "torso" ], "specifically_covers": [ "torso_upper" ], "coverage": 95, "encumbrance": [ 2, 2 ] },
+      { "covers": [ "arm_l", "arm_r" ], "coverage": 100, "encumbrance": [ 0, 0 ] }
+    ],
+    "flags": [ "OUTER", "STURDY", "COAT_BACKER", "CANT_WEAR"],
+    "warmth": 5,
+    "material_thickness": 1.0,
+    "environmental_protection": 2
+  },
+  {
+    "id": "CoatBack_Base",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
+    "copy-from": "CoatBack_Stripped",
+    "name": "Buggy back",
+    "description": "The backing for jacket, made from BUGS.",
     "pocket_data": [
       {
         "pocket_type": "CONTAINER",
@@ -59,6 +73,7 @@
         "max_item_length": "100 cm",
         "holster": true
       }
+<<<<<<< Updated upstream:data/json/items/armor/ModularCrap/Modu_Initial_Inserts.json
     ],
     "armor": [
       { "covers": [ "torso" ], "specifically_covers": [ "torso_lower" ], "coverage": 100, "encumbrance": [ 2, 2 ] },
@@ -70,6 +85,11 @@
     "material_thickness": 1.0
   },
   {
+=======
+     ]
+   },
+   {
+>>>>>>> Stashed changes:data/json/items/armor/ModularCrap/Backing.json
     "id": "CoatBackThick_Base",
     "type": "ITEM",
     "subtypes": [ "ARMOR" ],
@@ -92,6 +112,7 @@
     "material_thickness": 0.5,
     "weight": "750 g",
     "volume": "1500 ml"
+<<<<<<< Updated upstream:data/json/items/armor/ModularCrap/Modu_Initial_Inserts.json
   },
   {
     "id": "CoatBack_Carcosa",
@@ -105,6 +126,10 @@
     "material": [ "leather", "kevlar" ]
   },
   {
+=======
+   },
+   {
+>>>>>>> Stashed changes:data/json/items/armor/ModularCrap/Backing.json
     "id": "CoatBack_Cott",
     "type": "ITEM",
     "subtypes": [ "ARMOR" ],
@@ -229,6 +254,7 @@
     "name": "Canvas Coat Backer",
     "description": "A thin canvas backing for a jacket. Lighter than most, & keeps you breathable. ",
     "material": [ "canvas" ]
+<<<<<<< Updated upstream:data/json/items/armor/ModularCrap/Modu_Initial_Inserts.json
   },
   {
     "id": "CoatLine_Base",
@@ -431,4 +457,131 @@
       }
     ]
   }
+=======
+   },
+   {
+    "id": "CoatBack_Carcosa",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
+    "copy-from": "CoatBackThick_Base",
+    "name": "Esoteric Coat Backer",
+    "description": "A layered leather & kevlar backing for a jacket. There's eyes all around it, & you're not sure if they're painted or stitched on. They keep looking at you... Did-Did that one just blink?",
+    "warmth": 8,
+    "material_thickness": 1.75,
+    "material": [ "leather", "kevlar" ]
+   },
+   {
+    "id": "CoatBack_Hazmat",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
+    "copy-from": "CoatBack_Stripped",
+    "name": "Pack Rat Backer",
+    "description": "What used to be a hazmat suit is now tailored to fit a coat. It's fragile, pretty encumbering, & isn't very breathable, but it'll keep you safe from the dangers of cataclysm.",
+    "material": [ "plastic" ],
+    "material_thickness": 0.5,
+    "environmental_protection": 4,
+    "flags": 
+     ["WATERPROOF",
+      "IRRITANT_IMMUNE",
+      "RAINPROOF",
+      "GAS_PROOF",
+      "RAD_PROOF",
+      "ELECTRIC_IMMUNE",
+      "OUTER",
+      "SOFT"]
+   },
+   {
+    "id": "CoatBack_PackRat",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
+    "copy-from": "CoatBack_Stripped",
+    "name": "Pack Rat Backer",
+    "description": "A backing completely covered in pockets & attachment slots. Smart construction means that they aren't as encumbering as normal, & feel lighter. It even includes a sheath & gun holster! In recompense, you can't put armor nor any attackments.",
+    "material": [ "nylon", "kevlar" ],
+    "material_thickness": 0.25,
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+        "holster": true,
+        "description": "Button-fastened canteen pocket.",
+        "max_contains_volume": "1751 ml",
+        "max_contains_weight": "3800 g",
+        "max_item_length": "23 cm",
+        "moves": 40,
+        "volume_encumber_modifier": 0.2,
+        "weight_multiplier": 0.80
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "//": "6 inches tall, 4 inches wide, and 1.5 inches deep.",
+        "max_contains_volume": "590 ml",
+        "max_contains_weight": "2 kg",
+        "max_item_length": "15 cm",
+        "description": "Button-fastened hip pocket.",
+        "moves": 80,
+        "weight_multiplier": 0.80
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "//": "7 inches tall, 3 inches wide, and 1 inch deep.",
+        "max_contains_volume": "361 ml",
+        "max_contains_weight": "1500 g",
+        "max_item_length": "18 cm",
+        "description": "Button-fastened chest pocket.",
+        "moves": 80,
+        "weight_multiplier": 0.70
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "//": "7 inches tall, 3 inches wide, and 1 inch deep.",
+        "max_contains_volume": "361 ml",
+        "max_contains_weight": "1500 g",
+        "max_item_length": "18 cm",
+        "description": "Button-fastened chest pocket.",
+        "moves": 80,
+        "weight_multiplier": 0.70
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "//": "4 inches tall, 2 inches wide, and 1 inch deep.",
+        "max_contains_volume": "131 ml",
+        "max_contains_weight": "1 kg",
+        "max_item_length": "13 cm",
+        "description": "Velcro-fastened internal pocket.",
+        "moves": 150,
+        "weight_multiplier": 0.50
+      },
+      {
+        "//": "hydration pouch storage",
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "3250 ml",
+        "max_contains_weight": "4 kg",
+        "max_item_length": "30 cm",
+        "moves": 500,
+        "description": "Pouch sized for a hydration pack."
+      },
+      {
+        "magazine_well": "350 ml",
+        "pocket_type": "CONTAINER",
+        "description": "Holster for a gun.",
+        "holster": true,
+        "min_item_volume": "250 ml",
+        "max_contains_volume": "1000 ml",
+        "max_contains_weight": "2 kg",
+        "max_item_length": "30 cm",
+        "moves": 50
+      },
+      {
+        "magazine_well": "350 ml",
+        "description": "Sheath for a knife.",
+        "holster": true,
+        "max_contains_volume": "750 ml",
+        "max_contains_weight": "2 kg",
+        "max_item_length": "70 cm",
+        "moves": 20,
+        "flag_restriction": [ "SHEATH_KNIFE" ]
+      }
+    ]
+   }
+>>>>>>> Stashed changes:data/json/items/armor/ModularCrap/Backing.json
 ]

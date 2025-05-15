@@ -1,6 +1,67 @@
 [
   {
+<<<<<<< Updated upstream
     "id": "ModuPants_Base",
+=======
+   "id": "ModuPants_Base",
+   "type": "ITEM",
+   "subtypes": [ "ARMOR" ],
+   "name": "Modular Debug Pants",
+   "description": "A pair of pants that've been ripped of most of it's contents. Stitch in fabric according to needs & haves. You're not supposed to have this!",
+   "weight": "560 g",
+   "volume": "2 L",
+   "price": "100 USD",
+   "price_postapoc": "10 USD",
+   "material": [ "cotton" ],
+   "symbol": "[",
+   "looks_like": "jeans",
+   "color": "brown",
+   "pocket_data": [
+     {
+      "pocket_type": "CONTAINER",
+      "ablative": true,
+      "//": "Filler pocket, should be able to hold the ABSOLUTE max that the inserts can hold. No less, no more. Huge values are temporary, for now",
+      "description": "Stitching for a filler",
+      "flag_restriction": [ "PANTS_FILLER" ],
+      "max_contains_volume": "200 L",
+      "max_contains_weight": "200 kg",
+      "moves": 60000,
+      "max_item_length": "100 cm",
+      "holster": true
+     },
+     {
+      "pocket_type": "CONTAINER",
+      "ablative": true,
+      "//": "Liner pocket, should be able to hold the ABSOLUTE max that the inserts can hold. No less, no more. Huge values are temporary, for now",
+      "description": "Stitching for the lining of the trousers",
+      "flag_restriction": [ "PANTS_LINER" ],
+      "max_contains_volume": "200 L",
+      "max_contains_weight": "200 kg",
+      "moves": 60000,
+      "max_item_length": "100 cm",
+      "holster": true
+     },
+     {
+      "pocket_type": "CONTAINER",
+      "ablative": true,
+      "//": "Utility pocket, should be able to hold the ABSOLUTE max that the inserts can hold. No less, no more. Huge values are temporary, for now",
+      "description": "Stitching for putting utility features",
+      "flag_restriction": [ "PANTS_UTILITY" ],
+      "max_contains_volume": "200 L",
+      "max_contains_weight": "200 kg",
+      "moves": 60000,
+      "max_item_length": "100 cm",
+      "holster": true
+     }
+   ],
+   "warmth": 5,
+   "material_thickness": 0.5,
+   "flags": [ "NORMAL" ],
+   "armor": [ { "encumbrance": 4, "coverage": 100, "covers": [ "leg_l", "leg_r" ] } ]
+  },
+  {
+   "id": "ModuPantsMut_Base",
+>>>>>>> Stashed changes
     "type": "ITEM",
     "subtypes": [ "ARMOR" ],
     "name": "Modular Debug Pants",
