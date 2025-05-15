@@ -266,6 +266,8 @@
   },
   {
     "id": "Modu_Leather_BombMut",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
     "copy-from": "ModuBombMutBase",
     "name": { "str": "Modular Leather Mutant Bomber" },
     "description": "A top-cut leather bomber stripped of all it's parts, but also some additional waterproofing, breathability, & environmental protection, at the cost of weight & encumbrance. Insert your desired parts, & create a nice bomber, perfectly fit for a beautiful critter like yourself.",
