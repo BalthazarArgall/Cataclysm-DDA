@@ -14,12 +14,11 @@
       {
         "pocket_type": "CONTAINER",
         "ablative": true,
-        "//": "Armor pocket, should be able to hold the ABSOLUTE max that the inserts can hold. No less, no more.",
+        "//": "Armor pocket, should be able to hold the ABSOLUTE max that the inserts can hold. No less, no more. Huge values are temporary, for now",
         "description": "Stitching for putting in a left forearm protector",
         "flag_restriction": [ "BACK_L_FORE" ],
-        "//": "Huge values are temporary, for now",
-        "max_contains_volume": "200 l",
-        "max_contains_weight": "200 k",
+        "max_contains_volume": "200 L",
+        "max_contains_weight": "200 kg",
         "moves": 60000,
         "max_item_length": "100 cm",
         "holster": true
@@ -27,12 +26,11 @@
       {
         "pocket_type": "CONTAINER",
         "ablative": true,
-        "//": "Armor pocket, should be able to hold the ABSOLUTE max that the inserts can hold. No less, no more.",
+        "//": "Armor pocket, should be able to hold the ABSOLUTE max that the inserts can hold. No less, no more. Huge values are temporary, for now",
         "flag_restriction": [ "BACK_R_FORE" ],
         "description": "Stitching for putting in a right forearm protector.",
-        "//": "Huge values are temporary, for now",
-        "max_contains_volume": "200 l",
-        "max_contains_weight": "200 k",
+        "max_contains_volume": "200 L",
+        "max_contains_weight": "200 kg",
         "moves": 60000,
         "max_item_length": "100 cm",
         "holster": true
@@ -40,12 +38,11 @@
       {
         "pocket_type": "CONTAINER",
         "ablative": true,
-        "//": "Armband pocket, should be able to hold the ABSOLUTE max that the inserts can hold. No less, no more.",
+        "//": "Armband pocket, should be able to hold the ABSOLUTE max that the inserts can hold. No less, no more. Huge values are temporary, for now",
         "flag_restriction": [ "ARMBAND" ],
         "description": "Stitching for putting on an armband or your own choosing.",
-        "//": "Huge values are temporary, for now",
-        "max_contains_volume": "200 l",
-        "max_contains_weight": "200 k",
+        "max_contains_volume": "200 L",
+        "max_contains_weight": "200 kg",
         "moves": 60000,
         "max_item_length": "100 cm",
         "holster": true
@@ -53,12 +50,11 @@
       {
         "pocket_type": "CONTAINER",
         "ablative": true,
-        "//": "Armor pocket, should be able to hold the ABSOLUTE max that the inserts can hold. No less, no more.",
+        "//": "Armor pocket, should be able to hold the ABSOLUTE max that the inserts can hold. No less, no more. Huge values are temporary, for now",
         "description": "Stitching for putting in a design of your own choosing.",
         "flag_restriction": [ "BACK_ART" ],
-        "//": "Huge values are temporary, for now",
-        "max_contains_volume": "200 l",
-        "max_contains_weight": "200 k",
+        "max_contains_volume": "200 L",
+        "max_contains_weight": "200 kg",
         "moves": 60000,
         "max_item_length": "100 cm",
         "holster": true
@@ -69,12 +65,14 @@
       { "covers": [ "torso" ], "specifically_covers": [ "torso_upper" ], "coverage": 95, "encumbrance": [ 2, 2 ] },
       { "covers": [ "arm_l", "arm_r" ], "coverage": 100, "encumbrance": [ 0, 0 ] }
     ],
-    "flags": [ "COAT_BACKER", "CANT_WEAR" ],
+    "flags": [ "OUTER", "STURDY", "COAT_BACKER", "CANT_WEAR" ],
     "warmth": 5,
     "material_thickness": 1.0
   },
   {
     "id": "CoatBackThick_Base",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
     "copy-from": "CoatBack_Base",
     "name": "Thick Buggy Back",
     "description": "Another backing for a jacket, made from LOCUSTS.",
@@ -85,6 +83,8 @@
   },
   {
     "id": "CoatBackThin_Base",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
     "copy-from": "CoatBack_Base",
     "name": "Thin Buggy Back",
     "description": "Another backing for a jacket, made from ANTS.",
@@ -95,6 +95,8 @@
   },
   {
     "id": "CoatBack_Carcosa",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
     "copy-from": "CoatBackThick_Base",
     "name": "Esoteric Coat Backer",
     "description": "A layered leather & kevlar backing for a jacket. There's eyes all around it, & you're not sure if they're painted or stitched on. They keep looking at you... Did-Did that one just blink?",
@@ -104,6 +106,8 @@
   },
   {
     "id": "CoatBack_Cott",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
     "copy-from": "CoatBack_Base",
     "name": "Cotton Coat Backer",
     "description": "A standard cotton backing for a jacket.",
@@ -111,6 +115,8 @@
   },
   {
     "id": "CoatBackThick_Cott",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
     "copy-from": "CoatBackThick_Base",
     "name": "Thick Cotton Coat Backer",
     "description": "A thick cotton backing for a jacket. Warmer & more protective, but heavier.",
@@ -118,6 +124,8 @@
   },
   {
     "id": "CoatBackThin_Cott",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
     "copy-from": "CoatBackThin_Base",
     "name": "Thin Cotton Coat Backer",
     "description": "A thin cotton backing for a jacket. Less protective, but it's pretty light.",
@@ -125,6 +133,8 @@
   },
   {
     "id": "CoatBack_Denim",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
     "copy-from": "CoatBack_Base",
     "name": "Denim Coat Backer",
     "description": "A well-worn denim backing for a jacket.",
@@ -132,6 +142,8 @@
   },
   {
     "id": "CoatBackThick_Denim",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
     "copy-from": "CoatBackThick_Base",
     "name": "Thick Denim Coat Backer",
     "description": "A thick denim backing for a jacket. It feels like a warm hug. Warmer & more protective, but heavier.",
@@ -139,6 +151,8 @@
   },
   {
     "id": "CoatBackThick_BikerDenim",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
     "copy-from": "CoatBackThick_Base",
     "name": "Denim Biker Coat Backer",
     "description": "A thick denim backing for a jacket. Covered in band patches & smelling of beer, it makes you feel like a proper biker. Warmer & more protective, but heavier.",
@@ -146,6 +160,8 @@
   },
   {
     "id": "CoatBackThin_Denim",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
     "copy-from": "CoatBackThin_Base",
     "name": "Thin Denim Coat Backer",
     "description": "A thin denim backing for a jacket. It's decently light, but still pretty protective.",
@@ -153,6 +169,8 @@
   },
   {
     "id": "CoatBack_Leather",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
     "copy-from": "CoatBack_Base",
     "name": "Leather Coat Backer",
     "description": "A brown leather backing for a jacket.",
@@ -160,6 +178,8 @@
   },
   {
     "id": "CoatBackThick_Leather",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
     "copy-from": "CoatBackThick_Base",
     "name": "Thick Leather Coat Backer",
     "description": "A layered leather backing for a jacket. Brings out the cowboy in you. Warmer & more protective, but heavier.",
@@ -167,6 +187,8 @@
   },
   {
     "id": "CoatBackThick_BikerLeather",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
     "copy-from": "CoatBackThick_Base",
     "name": "Leather Biker Coat Backer",
     "description": "A layered leather backing for a jacket. Covered in band patches & smelling of beer, it makes you feel like a proper biker. Warmer & more protective, but heavier.",
@@ -174,6 +196,8 @@
   },
   {
     "id": "CoatBackThin_Leather",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
     "copy-from": "CoatBackThin_Base",
     "name": "Thin Leather Coat Backer",
     "description": "A light leather backing for a jacket. Suitable to warm weather. It's decently light, but still pretty protective.",
@@ -181,6 +205,8 @@
   },
   {
     "id": "CoatBack_Canvas",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
     "copy-from": "CoatBack_Base",
     "name": "Canvas Coat Backer",
     "description": "A khaki canvas backing for a jacket.",
@@ -188,6 +214,8 @@
   },
   {
     "id": "CoatBackThick_Canvas",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
     "copy-from": "CoatBackThick_Base",
     "name": "Thick Canvas Coat Backer",
     "description": "A thick canvas backing for a jacket. It's good for protection, but weighs a little more on your weary shoulders.",
@@ -195,6 +223,8 @@
   },
   {
     "id": "CoatBackThin_Canvas",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
     "copy-from": "CoatBackThin_Base",
     "name": "Canvas Coat Backer",
     "description": "A thin canvas backing for a jacket. Lighter than most, & keeps you breathable. ",
@@ -218,10 +248,12 @@
     "warmth": 5,
     "material_thickness": 0.25,
     "environmental_protection": 2,
-    "flags": [ "COAT_LINER", "CANT_WEAR" ]
+    "flags": [ "OUTER", "COAT_LINER", "CANT_WEAR" ]
   },
   {
     "id": "CoatLine_Cott",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
     "copy-from": "CoatLine_Base",
     "name": "Cotton Coat liner",
     "description": "A simple liner, mainly keeps the stitches from rubbing on your skin.",
@@ -229,6 +261,8 @@
   },
   {
     "id": "CoatLine_Silk",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
     "copy-from": "CoatLine_Base",
     "name": "Silk Coat liner",
     "description": "A bourgeois silk liner, mainly keeps the stitches from rubbing on your skin, but also keeps you super-comfy.",
@@ -252,10 +286,12 @@
     "warmth": 15,
     "material_thickness": 0.5,
     "environmental_protection": 2,
-    "flags": [ "COAT_LINER", "CANT_WEAR" ]
+    "flags": [ "OUTER", "COAT_LINER", "CANT_WEAR" ]
   },
   {
     "id": "CoatFur_Real",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
     "copy-from": "CoatFur_Base",
     "name": "Fur liner",
     "description": "A thick liner made from fur. Excellent at keeping you from the cold, but pretty encumbering.",
@@ -263,6 +299,8 @@
   },
   {
     "id": "CoatFur_Faux",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
     "copy-from": "CoatFur_Base",
     "name": "Faux-Fur liner",
     "description": "A thick fur liner, now cruelty-free! excellent at keeping you from the cold, but pretty encumbering.",
@@ -270,6 +308,8 @@
   },
   {
     "id": "CoatFur_Wool",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
     "copy-from": "CoatFur_Base",
     "name": "Wool liner",
     "description": "A thick wool liner, excellent at keeping you from the cold, but pretty encumbering. It feels like cuddling a cloud.",
@@ -332,6 +372,8 @@
   },
   {
     "id": "PantFur_Faux",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
     "copy-from": "PantFur_Base",
     "name": "Faux-Fur liner",
     "description": "A thick fur liner, now cruelty-free! excellent at keeping you from the cold, but pretty encumbering.",
@@ -339,6 +381,8 @@
   },
   {
     "id": "PantFur_Wool",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
     "copy-from": "PantFur_Base",
     "name": "Wool liner",
     "description": "A thick wool liner, excellent at keeping you from the cold, but pretty encumbering. It feels like walking through a cloud.",
@@ -364,12 +408,11 @@
       {
         "pocket_type": "CONTAINER",
         "ablative": true,
-        "//": "Filler pocket, should be able to hold the ABSOLUTE max that the inserts can hold. No less, no more.",
+        "//": "Armor pocket, should be able to hold the ABSOLUTE max that the inserts can hold. No less, no more. Huge values are temporary, for now",
         "description": "Pocket for a shin protector",
         "flag_restriction": [ "PANTS_L_SHIN" ],
-        "//": "Huge values are temporary, for now",
-        "max_contains_volume": "200 l",
-        "max_contains_weight": "200 k",
+        "max_contains_volume": "200 L",
+        "max_contains_weight": "200 kg",
         "moves": 60000,
         "max_item_length": "100 cm",
         "holster": true
@@ -377,12 +420,11 @@
       {
         "pocket_type": "CONTAINER",
         "ablative": true,
-        "//": "Liner pocket, should be able to hold the ABSOLUTE max that the inserts can hold. No less, no more.",
+        "//": "Armor pocket, should be able to hold the ABSOLUTE max that the inserts can hold. No less, no more. Huge values are temporary, for now",
         "description": "Pocket for a shin protector",
         "flag_restriction": [ "PANTS_R_SHIN" ],
-        "//": "Huge values are temporary, for now",
-        "max_contains_volume": "200 l",
-        "max_contains_weight": "200 k",
+        "max_contains_volume": "200 L",
+        "max_contains_weight": "200 kg",
         "moves": 60000,
         "max_item_length": "100 cm",
         "holster": true
