@@ -1,24 +1,158 @@
 [
   {
-    "id": "esapi_plate",
+    "id": "CoatBack_Base",
     "type": "ITEM",
     "subtypes": [ "ARMOR" ],
-    "category": "armor",
-    "name": { "str": "ESAPI ballistic plate" },
-    "description": "A polygonal ballistic plate with a slightly concave profile, made of ceramic.  Its inner surface is coated with UHMW polyethylene and is labeled \"TOP\", while the outer surface is labeled \"STRIKE FACE\".  This is intended to be worn in a ballistic vest, and can withstand several high-energy rifle rounds before breaking.",
-    "weight": "2500 g",
-    "volume": "1915 ml",
-    "longest_side": "32 cm",
-    "//": "ESAPI Medium are 24.13cm x 31.75cm and 2.5cm thick",
-    "price": "600 USD",
-    "price_postapoc": "1 USD",
-    "material": [ "ceramic" ],
-    "symbol": ",",
-    "color": "dark_gray",
-    "material_thickness": 25,
-    "non_functional": "destroyed_large_ceramic_plate",
-    "damage_verb": "makes a crunch, something has shifted",
-    "flags": [ "ABLATIVE_LARGE", "CANT_WEAR", "NO_SALVAGE" ],
-    "armor": [ { "encumbrance": 2, "coverage": 45, "covers": [ "torso" ], "specifically_covers": [ "torso_upper" ] } ]
-  },
+    "name": "Buggy back",
+    "description": "The backing for jacket, made from BUGS.",
+    "weight": "1500 g",
+    "volume": "2000 ml",
+    "price": "5 USD",
+    "price_postapoc": "10 USD 50 cent",
+    "material": [ "cotton" ],
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+        "ablative": true,
+        "//": "Armor pocket, should be able to hold the ABSOLUTE max that the inserts can hold. No less, no more.",
+        "description": "Stitching for putting in a left forearm protector",
+        "flag_restriction": [ "BACK_L_FORE" ],
+        "//": "Huge values are temporary, for now",
+        "max_contains_volume": "200 l",
+        "max_contains_weight": "200 k",
+        "moves": 60000,
+        "max_item_length": "100 cm",
+        "holster": true
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "ablative": true,
+        "//": "Armor pocket, should be able to hold the ABSOLUTE max that the inserts can hold. No less, no more.",
+        "flag_restriction": [ "BACK_R_FORE" ],
+        "description": "Stitching for putting in a right forearm protector.",
+        "//": "Huge values are temporary, for now",
+        "max_contains_volume": "200 l",
+        "max_contains_weight": "200 k",
+        "moves": 60000,
+        "max_item_length": "100 cm",
+        "holster": true
+      }
+     ],
+    "armor": [
+      { "covers": [ "torso" ], "specifically_covers": [ "torso_lower" ], "coverage": 100, "encumbrance": [ 0, 0 ] },
+      { "covers": [ "torso" ], "specifically_covers": [ "torso_upper" ], "coverage": 95, "encumbrance": [ 0, 0 ] },
+      { "covers": [ "arm_l", "arm_r" ], "coverage": 100, "encumbrance": [ 0, 0 ] }
+    ],
+    "flags": ["COAT_BACKER", "CANT_WEAR"],
+    "warmth": 5,
+    "material_thickness": 1.0,
+   },
+   {
+    "id": "CoatBackThick_Base",
+    "copy-from": "CoatBack_Base",
+    "name": "Thick Buggy Back",
+    "description": "Another backing for a jacket, made from LOCUSTS.",
+    "warmth": 7.5,
+    "material_thickness": 1.5,
+    "weight": "2250 g",
+    "volume": "2500 ml"
+   },
+   {
+    "id": "CoatBackThin_Base",
+    "copy-from": "CoatBack_Base",
+    "name": "Thin Buggy Back",
+    "description": "Another backing for a jacket, made from ANTS.",
+    "warmth": 0.25,
+    "material_thickness": 0.5,
+    "weight": "750 g",
+    "volume": "1500 ml"
+   },
+   {
+    "id": "CoatBack_Carcosa",
+    "copy-from": "CoatBackThick_Base",
+    "name": "Esoteric Backing",
+    "description": "A layered leather & kevlar backing for a jacket. There's eyes all around it, & you're not sure if they're painted or stitched on. They keep looking at you... Did-Did that one just blink?",
+    "warmth": 8,
+    "material_thickness": 1.75,
+    "material": [ "leather", "kevlar" ]
+   },
+   {
+    "id": "CoatBack_Cott",
+    "copy-from": "CoatBack_Base",
+    "name": "Cotton Backing",
+    "description": "A standard cotton backing for a jacket.",
+    "material": [ "cotton" ]
+   },
+   {
+    "id": "CoatBackThick_Cott",
+    "copy-from": "CoatBackThick_Base",
+    "name": "Thick Cotton Backing",
+    "description": "A thick cotton backing for a jacket. Warmer & more protective, but heavier.",
+    "material": [ "cotton" ]
+   },
+   {
+    "id": "CoatBackThin_Cott",
+    "copy-from": "CoatBackThin_Base",
+    "name": "Thin Cotton Backing",
+    "description": "A thin cotton backing for a jacket. Less protective, but it's pretty light.",
+    "material": [ "cotton" ]
+   },
+   {
+    "id": "CoatBack_Denim",
+    "copy-from": "CoatBack_Base",
+    "name": "Denim Backing",
+    "description": "A well-worn denim backing for a jacket.",
+    "material": [ "denim" ]
+   },
+   {
+    "id": "CoatBackThick_Denim",
+    "copy-from": "CoatBackThick_Base",
+    "name": "Thick Denim Backing",
+    "description": "A thick denim backing for a jacket. It feels like a warm hug. Warmer & more protective, but heavier.",
+    "material": [ "denim" ]
+   },
+   {
+    "id": "CoatBackThick_BikerDenim",
+    "copy-from": "CoatBackThick_Base",
+    "name": "Denim Biker Backing",
+    "description": "A thick denim backing for a jacket. Covered in band patches & smelling of beer, it makes you feel like a proper biker. Warmer & more protective, but heavier.",
+    "material": [ "denim" ]
+   },
+   {
+    "id": "CoatBackThin_Denim",
+    "copy-from": "CoatBackThin_Base",
+    "name": "Thin Denim Backing",
+    "description": "A thin denim backing for a jacket. It's decently light, but still pretty protective.",
+    "material": [ "denim" ]
+   },
+   {
+    "id": "CoatBack_Leather",
+    "copy-from": "CoatBack_Base",
+    "name": "Leather Backing",
+    "description": "A brown leather backing for a jacket.",
+    "material": [ "leather" ]
+   },
+   {
+    "id": "CoatBackThick_Leather",
+    "copy-from": "CoatBackThick_Base",
+    "name": "Thick Leather Backing",
+    "description": "A layered leather backing for a jacket. Brings out the cowboy in you. Warmer & more protective, but heavier.",
+    "material": [ "leather" ]
+   },
+   {
+    "id": "CoatBackThick_BikerLeather",
+    "copy-from": "CoatBackThick_Base",
+    "name": "Leather Biker Backing",
+    "description": "A layered leather backing for a jacket. Covered in band patches & smelling of beer, it makes you feel like a proper biker. Warmer & more protective, but heavier.",
+    "material": [ "leather" ]
+   },
+   {
+    "id": "CoatBackThin_Leather",
+    "copy-from": "CoatBackThin_Base",
+    "name": "Thin Leather Backing",
+    "description": "A light leather backing for a jacket. Suitable to warm weather. It's decently light, but still pretty protective.",
+    "material": [ "Leather" ]
+   }
+   {
+   }
 ]

@@ -3,8 +3,8 @@
     "id": "ModuPants_Base",
     "type": "ITEM",
     "subtypes": [ "ARMOR" ],
-    "name": { "str_sp": "Modular Scav Pants" },
-    "description": "A pair of pants that've been ripped of most of it's contents. Stitch in fabric according to needs & haves.",
+    "name": { "str_sp": "Modular Debug Pants" },
+    "description": "A pair of pants that've been ripped of most of it's contents. Stitch in fabric according to needs & haves. You're not supposed to have this!",
     "weight": "560 g",
     "volume": "2 L",
     "price": "100 USD",
@@ -17,9 +17,9 @@
       {
         "pocket_type": "CONTAINER",
         "ablative": true,
-	"//": "Liner pocket, should be able to hold the ABSOLUTE max that the inserts can hold. No less, no more."
-        "flag_restriction": [ "PANTS_LINER_PLACEHOLD" ],
-        "description": "Stitching for a liner",
+	"//": "Backing pocket, should be able to hold the ABSOLUTE max that the inserts can hold. No less, no more."
+        "flag_restriction": [ "PANTS_BACKER" ],
+        "description": "Stitching for the backing of the pants",
 	"//": "Huge values are temporary, for now",
         "max_contains_volume": "200 l",
         "max_contains_weight": "200 k",
@@ -32,7 +32,7 @@
         "ablative": true,
 	"//": "Filler pocket, should be able to hold the ABSOLUTE max that the inserts can hold. No less, no more."
         "description": "Stitching for a filler",
-        "flag_restriction": [ "PANTS_FILLER_PLACEHOLD" ],
+        "flag_restriction": [ "PANTS_FILLER" ],
 	"//": "Huge values are temporary, for now",
         "max_contains_volume": "200 l",
         "max_contains_weight": "200 k",
@@ -44,8 +44,8 @@
         "pocket_type": "CONTAINER",
         "ablative": true,
 	"//": "Liner pocket, should be able to hold the ABSOLUTE max that the inserts can hold. No less, no more."
-        "description": "Stitching for the backing of the coat",
-        "flag_restriction": [ "PANTS_FILLER_PLACEHOLD" ],
+        "description": "Stitching for the lining of the trousers",
+        "flag_restriction": [ "PANTS_LINER" ],
 	"//": "Huge values are temporary, for now",
         "max_contains_volume": "200 l",
         "max_contains_weight": "200 k",
@@ -57,8 +57,8 @@
         "pocket_type": "CONTAINER",
         "ablative": true,
 	"//": "Utility pocket, should be able to hold the ABSOLUTE max that the inserts can hold. No less, no more."
-        "description": "Stitching for the backing of the coat",
-        "flag_restriction": [ "PANTS_UTILITY_PLACEHOLD" ]
+        "description": "Stitching for putting utility features",
+        "flag_restriction": [ "PANTS_UTILITY" ]
 	"//": "Huge values are temporary, for now"
         "max_contains_volume": "200 l",
         "max_contains_weight": "200 k",
@@ -75,8 +75,8 @@
    {
     "id": "ModuPantsMut_Base",
     "copy-from": "ModuPants_Base",
-    "name": { "str": "Modular Mutant Pants" },
-    "description": "A pair of pants that've been ripped of most of it's contents, they fit your new legs perfectly. Stitch in fabric according to needs & haves.",
+    "name": { "str": "Modular BYG Pants" },
+    "description": "A pair of pants that've been ripped of most of it's contents, they fit your new legs perfectly. Stitch in fabric according to needs & haves. These ones are made of bugs, & you're not supposed to have them.",
     "flags": [ "POCKETS", "NORMAL", "ALLOW_NATURAL_ATTACKS" ]
    },
 ]

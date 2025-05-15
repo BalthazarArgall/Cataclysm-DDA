@@ -15,7 +15,7 @@
     "color": "dark_gray",
     "sided": true,
     "material_thickness": 1,
-    "flags": [ "OVERSIZE", "WATER_FRIENDLY", "BELTED", "ARMBAND_PLACEHOLD" ],
+    "flags": [ "OVERSIZE", "WATER_FRIENDLY", "BELTED", "ARMBAND" ],
     "armor": [
       {
         "encumbrance": 0,
