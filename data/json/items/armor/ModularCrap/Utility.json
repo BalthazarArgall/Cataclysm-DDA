@@ -20,5 +20,5 @@
     "damage_verb": "makes a crunch, something has shifted",
     "flags": [ "ABLATIVE_LARGE", "CANT_WEAR", "NO_SALVAGE" ],
     "armor": [ { "encumbrance": 2, "coverage": 45, "covers": [ "torso" ], "specifically_covers": [ "torso_upper" ] } ]
-  },
+  }
 ]
