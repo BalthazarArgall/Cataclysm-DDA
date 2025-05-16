@@ -1,109 +1,5 @@
 [
   {
-    "id": "CoatBack_Stripped",
-    "type": "ITEM",
-    "subtypes": [ "ARMOR" ],
-    "name": "Buggy Bare Back",
-    "description": "The empty backing for jacket, made from BUGS.",
-    "weight": "1500 g",
-    "volume": "2000 ml",
-    "price": "5 USD",
-    "price_postapoc": "10 USD 50 cent",
-    "symbol": "#",
-    "material": [ "cotton" ],
-    "armor": [
-      { "covers": [ "torso" ], "specifically_covers": [ "torso_lower" ], "coverage": 100, "encumbrance": [ 2, 2 ] },
-      { "covers": [ "torso" ], "specifically_covers": [ "torso_upper" ], "coverage": 95, "encumbrance": [ 2, 2 ] },
-      { "covers": [ "arm_l", "arm_r" ], "coverage": 100, "encumbrance": [ 0, 0 ] }
-    ],
-    "flags": [ "OUTER", "STURDY", "COAT_BACKER", "CANT_WEAR" ],
-    "warmth": 5,
-    "material_thickness": 1.0,
-    "environmental_protection": 2
-  },
-  {
-    "id": "CoatBack_Base",
-    "type": "ITEM",
-    "subtypes": [ "ARMOR" ],
-    "copy-from": "CoatBack_Stripped",
-    "name": "Buggy back",
-    "description": "The backing for jacket, made from BUGS.",
-    "pocket_data": [
-      {
-        "pocket_type": "CONTAINER",
-        "ablative": true,
-        "//": "Armor pocket, should be able to hold the ABSOLUTE max that the inserts can hold. No less, no more. Huge values are temporary, for now",
-        "description": "Stitching for putting in a left forearm protector",
-        "flag_restriction": [ "BACK_L_FORE" ],
-        "max_contains_volume": "200 L",
-        "max_contains_weight": "200 kg",
-        "moves": 60000,
-        "max_item_length": "100 cm",
-        "holster": true
-      },
-      {
-        "pocket_type": "CONTAINER",
-        "ablative": true,
-        "//": "Armor pocket, should be able to hold the ABSOLUTE max that the inserts can hold. No less, no more. Huge values are temporary, for now",
-        "flag_restriction": [ "BACK_R_FORE" ],
-        "description": "Stitching for putting in a right forearm protector.",
-        "max_contains_volume": "200 L",
-        "max_contains_weight": "200 kg",
-        "moves": 60000,
-        "max_item_length": "100 cm",
-        "holster": true
-      },
-      {
-        "pocket_type": "CONTAINER",
-        "ablative": true,
-        "//": "Armband pocket, should be able to hold the ABSOLUTE max that the inserts can hold. No less, no more. Huge values are temporary, for now",
-        "flag_restriction": [ "ARMBAND" ],
-        "description": "Stitching for putting on an armband or your own choosing.",
-        "max_contains_volume": "200 L",
-        "max_contains_weight": "200 kg",
-        "moves": 60000,
-        "max_item_length": "100 cm",
-        "holster": true
-      },
-      {
-        "pocket_type": "CONTAINER",
-        "ablative": true,
-        "//": "Armor pocket, should be able to hold the ABSOLUTE max that the inserts can hold. No less, no more. Huge values are temporary, for now",
-        "description": "Stitching for putting in a design of your own choosing.",
-        "flag_restriction": [ "BACK_ART" ],
-        "max_contains_volume": "200 L",
-        "max_contains_weight": "200 kg",
-        "moves": 60000,
-        "max_item_length": "100 cm",
-        "holster": true
-      }
-    ]
-  },
-  {
-    "id": "CoatBackThick_Base",
-    "type": "ITEM",
-    "subtypes": [ "ARMOR" ],
-    "copy-from": "CoatBack_Base",
-    "name": "Thick Buggy Back",
-    "description": "Another backing for a jacket, made from LOCUSTS.",
-    "warmth": 7.5,
-    "material_thickness": 1.5,
-    "weight": "2250 g",
-    "volume": "2500 ml"
-  },
-  {
-    "id": "CoatBackThin_Base",
-    "type": "ITEM",
-    "subtypes": [ "ARMOR" ],
-    "copy-from": "CoatBack_Base",
-    "name": "Thin Buggy Back",
-    "description": "Another backing for a jacket, made from ANTS.",
-    "warmth": 0.25,
-    "material_thickness": 0.5,
-    "weight": "750 g",
-    "volume": "1500 ml"
-  },
-  {
     "id": "CoatBack_Cott",
     "type": "ITEM",
     "subtypes": [ "ARMOR" ],
@@ -245,11 +141,12 @@
     "type": "ITEM",
     "subtypes": [ "ARMOR" ],
     "copy-from": "CoatBack_Stripped",
-    "name": "Pack Rat Backer",
+    "name": "HazMat Back",
     "description": "What used to be a hazmat suit is now tailored to fit a coat. It's fragile, pretty encumbering, & isn't very breathable, but it'll keep you safe from the dangers of cataclysm.",
     "material": [ "plastic" ],
     "material_thickness": 0.5,
     "environmental_protection": 4,
+    "proportional": { "encumbrance": 4.5 },
     "flags": [ "WATERPROOF", "IRRITANT_IMMUNE", "RAINPROOF", "GAS_PROOF", "RAD_PROOF", "ELECTRIC_IMMUNE", "OUTER", "SOFT" ]
   },
   {

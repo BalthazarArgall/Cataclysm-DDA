@@ -37,18 +37,10 @@
   },
   {
     "type": "json_flag",
-    "id": "BACK_L_FORE"
+    "id": "BACK_FORE"
   },
   {
     "type": "json_flag",
-    "id": "BACK_R_FORE"
-  },
-  {
-    "type": "json_flag",
-    "id": "PANT_L_SHIN"
-  },
-  {
-    "type": "json_flag",
-    "id": "PANT_R_SHIN"
+    "id": "PANTS_SHIN"
   }
 ]

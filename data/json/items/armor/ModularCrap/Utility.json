@@ -1,9 +1,0 @@
-[
-  {
-    "id": "PlaceholderUtil",
-    "type": "ITEM",
-    "subtypes": [ "ARMOR" ],
-    "name": { "str": "Debug Utility" },
-    "description": "A placeholder, for now, made from BUGS."
-  }
-]
