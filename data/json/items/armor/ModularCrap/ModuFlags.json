@@ -13,10 +13,6 @@
   },
   {
     "type": "json_flag",
-    "id": "COAT_BACKER"
-  },
-  {
-    "type": "json_flag",
     "id": "COAT_FILLER"
   },
   {

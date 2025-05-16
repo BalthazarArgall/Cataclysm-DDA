@@ -9,7 +9,7 @@
     "volume": "2000 ml",
     "price": "179 USD",
     "price_postapoc": "15 USD 50 cent",
-    "material": [ "Cotton" ],
+    "material": [ "cotton" ],
     "symbol": "[",
     "looks_like": "jacket_windbreaker",
     "color": "dark_gray",
@@ -80,7 +80,7 @@
     "copy-from": "ModuCoatBase",
     "name": { "str": "Modular Da Bug Mutant Jacket" },
     "description": "A jacket stripped of all it's parts, just an empty hollow for your new, beautiful form to go into. Insert your desired cloth, & create a nice jacket. This one feels more debuggy than the other one.",
-    "flags": [ "POCKETS", "OUTER", "ALLOW_NATURAL_ATTACKS" ]
+    "flags": [ "POCKETS", "OUTER", "ALLOWS_NATURAL_ATTACKS" ]
   },
   {
     "id": "ModuBombBase",
@@ -92,7 +92,7 @@
     "volume": "3250 ml",
     "price": "340 USD",
     "price_postapoc": "20 USD 50 cent",
-    "material": [ "Cotton" ],
+    "material": [ "cotton" ],
     "symbol": "[",
     "looks_like": "jacket_windbreaker",
     "color": "dark_gray",
@@ -163,7 +163,7 @@
     "copy-from": "ModuBombBase",
     "name": { "str": "Modular Da Bug Mutant Jacket" },
     "description": "A jacket stripped of all it's parts, but also some additional waterproofing, breathability, & environmental protection, at the cost of weight & encumbrance. Insert your desired parts, & create a nice bomber, perfectly fit for a beautiful critter like yourself.",
-    "flags": [ "POCKETS", "OUTER", "RAINPROOF", "COLLAR", "ALLOW_NATURAL_ATTACKS" ]
+    "flags": [ "POCKETS", "OUTER", "RAINPROOF", "COLLAR", "ALLOWS_NATURAL_ATTACKS" ]
   },
   {
     "id": "ModuCoat_Cott",

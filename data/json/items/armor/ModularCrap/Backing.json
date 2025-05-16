@@ -3,10 +3,13 @@
     "id": "CoatBack_Stripped",
     "type": "ITEM",
     "subtypes": [ "ARMOR" ],
+    "name": "Buggy Bare Back",
+    "description": "The empty backing for jacket, made from BUGS.",
     "weight": "1500 g",
     "volume": "2000 ml",
     "price": "5 USD",
     "price_postapoc": "10 USD 50 cent",
+    "symbol": "#",
     "material": [ "cotton" ],
     "armor": [
       { "covers": [ "torso" ], "specifically_covers": [ "torso_lower" ], "coverage": 100, "encumbrance": [ 2, 2 ] },
@@ -197,7 +200,7 @@
     "copy-from": "CoatBackThin_Base",
     "name": "Thin Leather Coat Backer",
     "description": "A light leather backing for a jacket. Suitable to warm weather. It's decently light, but still pretty protective.",
-    "material": [ "Leather" ]
+    "material": [ "leather" ]
   },
   {
     "id": "CoatBack_Canvas",

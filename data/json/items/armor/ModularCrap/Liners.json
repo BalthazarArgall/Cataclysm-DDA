@@ -5,6 +5,7 @@
     "subtypes": [ "ARMOR" ],
     "name": { "str": "Debug Coat Liner" },
     "description": "A simple liner, mainly keeps the stitches from rubbing on your skin. This one is made from BUGS.",
+    "symbol": "O",
     "weight": "1677 g",
     "volume": "5750 ml",
     "price": "5 kUSD",
@@ -27,15 +28,6 @@
     "name": "Cotton Coat pocketless liner",
     "description": "A simple pocketless liner, mainly keeps the stitches from rubbing on your skin.",
     "material": [ "cotton" ]
-   },
-   {
-    "id": "CoatLine_Silk",
-    "type": "ITEM",
-    "subtypes": [ "ARMOR" ],
-    "copy-from": "CoatLine_Cott",
-    "name": "Silk Coat pocketless liner",
-    "description": "A bourgeois pocketless silk liner, mainly keeps the stitches from rubbing on your skin, but also keeps you super-comfy.",
-    "material": [ "silk" ]
    },
    {
     "id": "CoatLine_Canvas",
@@ -88,15 +80,6 @@
     "flags": [ "OUTER", "COAT_LINER", "CANT_WEAR", "POCKETS" ]
    },
    {
-    "id": "CoatLinePock_Silk",
-    "type": "ITEM",
-    "subtypes": [ "ARMOR" ],
-    "copy-from": "CoatLinePock_Cott",
-    "name": "Silk Coat liner",
-    "description": "A bourgeois silk liner, mainly keeps the stitches from rubbing on your skin. It's got pockets, but it also keeps you super-comfy.",
-    "material": [ "silk" ]
-   },
-   {
     "id": "CoatLinePock_Canvas",
     "type": "ITEM",
     "subtypes": [ "ARMOR" ],
@@ -111,6 +94,7 @@
     "subtypes": [ "ARMOR" ],
     "name": { "str": "Debug Trouser Liner" },
     "description": "A simple liner, mainly keeps the stitches from rubbing on your skin. This one is made from BUGS.",
+    "symbol": "O",
     "weight": "1677 g",
     "volume": "5750 ml",
     "price": "5 kUSD",
@@ -120,7 +104,7 @@
     "warmth": 5,
     "material_thickness": 0.25,
     "environmental_protection": 2,
-    "flags": ["PANT_LINER", "CANT_WEAR"]
+    "flags": ["PANTS_LINER", "CANT_WEAR"]
    },
    {
     "id": "PantLine_Cott",
@@ -130,14 +114,5 @@
     "name": "Cotton Trouser liner",
     "description": "A simple liner, mainly keeps the stitches from rubbing on your skin.",
     "material": [ "cotton" ]
-   },
-   {
-    "id": "PantLine_Silk",
-    "type": "ITEM",
-    "subtypes": [ "ARMOR" ],
-    "copy-from": "PantLine_Base",
-    "name": "Silk Trouser liner",
-    "description": "A bourgeois silk liner, mainly keeps the stitches from rubbing on your skin, but also keeps you super-comfy.",
-    "material": [ "silk" ]
    }
 ]

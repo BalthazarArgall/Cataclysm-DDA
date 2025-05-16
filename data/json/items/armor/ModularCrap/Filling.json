@@ -5,17 +5,19 @@
     "subtypes": [ "ARMOR" ],
     "name": { "str": "Debug Coat Fur" },
     "description": "Some thick insulation, keeps you from being nothing. This one is made from FURRY BUGS.",
+    "symbol": "@",
     "weight": "1677 g",
     "volume": "5750 ml",
     "price": "5 kUSD",
     "price_postapoc": "5 USD",
     "material": [ "fur" ],
-    "armor": [ { "covers": [ "torso" ], "coverage": 100 }, { "covers": [ "arm_l", "arm_r" ], "coverage": 100 } ],
+    "armor": [
+      { "covers": [ "torso" ], "coverage": 100, "encumbrance": 5 },
+      { "covers": [ "arm_l", "arm_r" ], "coverage": 100, "encumbrance": 5 } ],
     "warmth": 2,
     "material_thickness": 0.5,
     "environmental_protection": 1,
-    "flags": [ "OUTER", "COAT_FILLER", "CANT_WEAR" ],
-    "encumbrance": 0
+    "flags": [ "OUTER", "COAT_FILLER", "CANT_WEAR" ]
   },
   {
     "id": "CoatFur_Real",
@@ -25,8 +27,7 @@
     "name": "Fur filler",
     "description": "Some thick fur insulation, excellent at keeping you from the cold, but pretty encumbering.",
     "material": [ "fur" ],
-    "warmth": 20,
-    "encumbrance": 6
+    "warmth": 20
   },
   {
     "id": "CoatFur_Faux",
@@ -36,8 +37,7 @@
     "name": "Faux-Fur filler",
     "description": "Some thick fur insulation, now cruelty-free! excellent at keeping you from the cold, but pretty encumbering.",
     "material": [ "faux_fur" ],
-    "warmth": 15,
-    "encumbrance": 6
+    "warmth": 15
   },
   {
     "id": "CoatFur_Wool",
@@ -47,8 +47,7 @@
     "name": "Wool filler",
     "description": "Some thick wool insulation, excellent at keeping you from the cold, but pretty encumbering. It feels like cuddling a cloud.",
     "material": [ "wool" ],
-    "warmth": 20,
-    "encumbrance": 5
+    "warmth": 20
   },
   {
     "id": "CoatFur_Cott",
@@ -59,7 +58,7 @@
     "description": "Some bits of thick cotton for use as insulation, excellent at keeping you from the cold, but pretty encumbering. It feels like cuddling a cloud.",
     "material": [ "cotton" ],
     "warmth": 10,
-    "encumbrance": 4
+    "proportional": { "encumbrance": 0.8 }
   },
   {
     "id": "CoatFur_Carcosa",
@@ -70,7 +69,7 @@
     "description": "A large sheet of some sort of fur you've never seen before. It shifts from black & purple, depending where you look at it from, & is very warm. It feels like it's hugging you.",
     "material": [ "cotton" ],
     "warmth": 10,
-    "encumbrance": 4
+    "proportional": { "encumbrance": 0.8 }
   },
   {
     "id": "CoatFur_Garbo",
@@ -82,7 +81,7 @@
     "material": [ "plastic" ],
     "flags": [ "OUTER", "COAT_FILLER", "CANT_WEAR", "RAINPROOF" ],
     "environmental_protection": 4,
-    "encumbrance": 10
+    "proportional": { "encumbrance": 2 }
   },
   {
     "id": "PantShinsInsert",
@@ -95,11 +94,12 @@
     "price": "5 kUSD",
     "price_postapoc": "5 USD",
     "material": [ "kevlar" ],
+    "symbol": "H",
     "armor": [ { "encumbrance": [ 1, 1 ], "coverage": 100, "covers": [ "leg_l", "leg_r" ] } ],
     "warmth": 1,
     "material_thickness": 0.25,
     "environmental_protection": 0,
-    "flags": [ "PANT_FILLER", "CANT_WEAR" ],
+    "flags": [ "PANTS_FILLER", "CANT_WEAR" ],
     "pocket_data": [
       {
         "pocket_type": "CONTAINER",
@@ -133,6 +133,7 @@
     "subtypes": [ "ARMOR" ],
     "name": { "str": "Debug Trouser Fur" },
     "description": "Some thick fur insulation, keeps you from being cold. This one is made from FURRY BUGS.",
+    "symbol": "@",
     "weight": "1677 g",
     "volume": "5750 ml",
     "price": "5 kUSD",
@@ -142,7 +143,7 @@
     "warmth": 15,
     "material_thickness": 0.5,
     "environmental_protection": 2,
-    "flags": [ "PANT_FILLER", "CANT_WEAR" ]
+    "flags": [ "PANTS_FILLER", "CANT_WEAR" ]
   },
   {
     "id": "PantFur_Real",

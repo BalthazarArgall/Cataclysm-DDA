@@ -186,6 +186,7 @@
    "subtypes": [ "ARMOR" ],
    "name": { "str": "Indistinct back design", "str_pl": "Insdistinct back design" },
    "description": "A mural that can be material that can be stitched onto a jacket, this one is completely unreadable.",
+    "symbol": "#",
    "weight": "205 g",
    "volume": "550 ml",
    "price": "30 USD",
