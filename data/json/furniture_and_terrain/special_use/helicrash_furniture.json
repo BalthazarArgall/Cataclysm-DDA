@@ -1,0 +1,305 @@
+[
+  {
+    "type": "terrain",
+    "id": "t_sunkenheli_floor",
+    "name": "sunken heli floor",
+    "roof": "t_metal_flat_roof",
+    "description": "Sunken heli default floors.",
+    "symbol": ".",
+    "color": "brown",
+    "connect_groups": [ "INDOORFLOOR" ],
+    "move_cost": 1,
+    "flags": [ "TRANSPARENT", "SUPPORTS_ROOF", "COLLAPSES", "INDOORS", "FLAT", "ROAD" ],
+    "bash": {
+      "sound": "SMASH!",
+      "ter_set": "t_null",
+      "str_min": 50,
+      "str_max": 400,
+      "str_min_supported": 100,
+      "items": [ { "item": "splinter", "count": [ 2, 8 ] }, { "item": "nail", "charges": [ 5, 10 ] } ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_sunkenheli_floor_rotator",
+    "name": "sunken heli seat rotator floor",
+    "description": "Sunken heli seat rotating floors.",
+    "connect_groups": [ "INDOORFLOOR", "MULCHFLOOR" ],
+    "copy-from": "t_sunkenheli_floor"
+  },
+  {
+    "type": "terrain",
+    "id": "t_sunkenheli_roof",
+    "name": "sunken heli roof",
+    "description": "Sunken heli default roof.",
+    "copy-from": "t_metal_flat_roof"
+  },
+  {
+    "type": "terrain",
+    "id": "t_sunkenheli_wall_nwcorner",
+    "name": "sunken helicopter nw corner",
+    "copy-from": "t_scrap_wall",
+    "description": "Sunken heli nw wall corner.",
+    "connect_groups": "WALL",
+    "connects_to": "WALL",
+    "flags": [ "SUPPORTS_ROOF", "WALL", "REDUCE_SCENT", "AUTO_WALL_SYMBOL", "MINEABLE", "BLOCK_WIND" ],
+    "symbol": "7",
+    "color": "light_gray"
+  },
+  {
+    "id": "t_sunkenheli_wall_necorner",
+    "copy-from": "t_sunkenheli_wall_nwcorner",
+    "type": "terrain",
+    "name": "sunken helicopter ne corner",
+    "description": "Sunken heli ne wall corner.",
+    "symbol": "9"
+  },
+  {
+    "id": "t_sunkenheli_wall_swcorner",
+    "copy-from": "t_sunkenheli_wall_nwcorner",
+    "type": "terrain",
+    "name": "sunken helicopter sw corner",
+    "description": "Sunken heli sw wall corner.",
+    "symbol": "4"
+  },
+  {
+    "id": "t_sunkenheli_wall_secorner",
+    "copy-from": "t_sunkenheli_wall_nwcorner",
+    "type": "terrain",
+    "name": "sunken helicopter se corner",
+    "description": "Sunken heli se wall corner.",
+    "symbol": "6"
+  },
+  {
+    "id": "t_sunkenheli_wall_n",
+    "copy-from": "t_sunkenheli_wall_nwcorner",
+    "name": "sunken helicopter n wall",
+    "type": "terrain",
+    "symbol": "#",
+    "color": "light_gray"
+  },
+  {
+    "id": "t_sunkenheli_wall_s",
+    "copy-from": "t_sunkenheli_wall_nwcorner",
+    "name": "sunken helicopter s wall",
+    "type": "terrain",
+    "symbol": "#",
+    "color": "light_gray"
+  },
+  {
+    "id": "t_sunkenheli_wall_w",
+    "copy-from": "t_sunkenheli_wall_nwcorner",
+    "name": "sunken helicopter w wall",
+    "type": "terrain",
+    "symbol": "#",
+    "color": "light_gray"
+  },
+  {
+    "id": "t_sunkenheli_wall_e",
+    "copy-from": "t_sunkenheli_wall_nwcorner",
+    "name": "sunken helicopter e wall",
+    "type": "terrain",
+    "symbol": "#",
+    "color": "light_gray"
+  },
+  {
+    "type": "terrain",
+    "id": "t_sunkenheli_quarterpanel_n_middle",
+    "name": "sunken helicopter quarterpanel n middle",
+    "description": "A sunken heli quarterpanel n middle.",
+    "move_cost": 1,
+    "coverage": 60,
+    "flags": [ "TRANSPARENT" ],
+    "connect_groups": "WALL",
+    "connects_to": "WALL",
+    "bash": {
+      "str_min": 30,
+      "str_max": 120,
+      "sound": "crash!",
+      "sound_fail": "whump!",
+      "ter_set": "t_null",
+      "items": [ { "item": "rock", "count": [ 400, 480 ] }, { "item": "pebble", "count": [ 50, 120 ] } ]
+    },
+    "symbol": "#",
+    "color": "light_gray"
+  },
+  {
+    "copy-from": "t_sunkenheli_quarterpanel_n_middle",
+    "id": "t_sunkenheli_quarterpanel_n_left",
+    "name": "sunken helicopter quarterpanel n left",
+    "description": "A sunken heli quarterpanel n left.",
+    "type": "terrain",
+    "symbol": "#",
+    "color": "light_gray"
+  },
+  {
+    "copy-from": "t_sunkenheli_quarterpanel_n_middle",
+    "id": "t_sunkenheli_quarterpanel_n_right",
+    "name": "sunken helicopter quarterpanel n right",
+    "description": "A sunken heli quarterpanel n right.",
+    "type": "terrain",
+    "symbol": "#",
+    "color": "light_gray"
+  },
+  {
+    "copy-from": "t_sunkenheli_quarterpanel_n_middle",
+    "id": "t_sunkenheli_quarterpanel_w_middle",
+    "name": "sunken helicopter quarterpanel w middle",
+    "description": "A sunken heli quarterpanel w middle.",
+    "type": "terrain",
+    "symbol": "#",
+    "color": "light_gray"
+  },
+  {
+    "copy-from": "t_sunkenheli_quarterpanel_n_middle",
+    "id": "t_sunkenheli_quarterpanel_w_left",
+    "name": "sunken helicopter quarterpanel w left",
+    "description": "A sunken heli quarterpanel w left.",
+    "type": "terrain",
+    "symbol": "#",
+    "color": "light_gray"
+  },
+  {
+    "copy-from": "t_sunkenheli_quarterpanel_n_middle",
+    "id": "t_sunkenheli_quarterpanel_w_right",
+    "name": "sunken helicopter quarterpanel w right",
+    "description": "A sunken heli quarterpanel w right.",
+    "type": "terrain",
+    "symbol": "#",
+    "color": "light_gray"
+  },
+  {
+    "copy-from": "t_sunkenheli_quarterpanel_n_middle",
+    "id": "t_sunkenheli_quarterpanel_e_middle",
+    "name": "sunken helicopter quarterpanel e middle",
+    "description": "A sunken heli quarterpanel e middle.",
+    "type": "terrain",
+    "symbol": "#",
+    "color": "light_gray"
+  },
+  {
+    "copy-from": "t_sunkenheli_quarterpanel_n_middle",
+    "id": "t_sunkenheli_quarterpanel_e_left",
+    "name": "sunken helicopter quarterpanel e left",
+    "description": "A sunken heli quarterpanel e left.",
+    "type": "terrain",
+    "symbol": "#",
+    "color": "light_gray"
+  },
+  {
+    "copy-from": "t_sunkenheli_quarterpanel_n_middle",
+    "id": "t_sunkenheli_quarterpanel_e_right",
+    "name": "sunken helicopter quarterpanel e right",
+    "description": "A sunken heli quarterpanel e right.",
+    "type": "terrain",
+    "symbol": "#",
+    "color": "light_gray"
+  },
+  {
+    "type": "terrain",
+    "id": "t_sunkenheli_windshield_n",
+    "name": "sunken helicopter windshield n",
+    "description": "A sunken heli windshield n.",
+    "move_cost": 1,
+    "coverage": 60,
+    "flags": [ "TRANSPARENT" ],
+    "connect_groups": "WALL",
+    "connects_to": "WALL",
+    "bash": {
+      "str_min": 30,
+      "str_max": 120,
+      "sound": "crash!",
+      "sound_fail": "whump!",
+      "ter_set": "t_null",
+      "items": [ { "item": "rock", "count": [ 400, 480 ] }, { "item": "pebble", "count": [ 50, 120 ] } ]
+    },
+    "symbol": "#",
+    "color": "light_gray"
+  },
+  {
+    "copy-from": "t_sunkenheli_windshield_n",
+    "id": "t_sunkenheli_windshield_nw",
+    "name": "sunken helicopter windshield nw",
+    "description": "A sunken heli windshield nw.",
+    "type": "terrain",
+    "symbol": "#",
+    "color": "light_gray"
+  },
+  {
+    "copy-from": "t_sunkenheli_windshield_n",
+    "id": "t_sunkenheli_windshield_ne",
+    "name": "sunken helicopter windshield ne",
+    "description": "A sunken heli windshield ne.",
+    "type": "terrain",
+    "symbol": "#",
+    "color": "light_gray"
+  },
+  {
+    "copy-from": "t_sunkenheli_windshield_n",
+    "id": "t_sunkenheli_windshield_w",
+    "name": "sunken helicopter windshield w",
+    "description": "A sunken heli windshield w.",
+    "type": "terrain",
+    "symbol": "#",
+    "color": "light_gray"
+  },
+  {
+    "copy-from": "t_sunkenheli_windshield_n",
+    "id": "t_sunkenheli_windshield_e",
+    "name": "sunken helicopter windshield e",
+    "description": "A sunken heli windshield e.",
+    "type": "terrain",
+    "symbol": "#",
+    "color": "light_gray"
+  },
+  {
+    "type": "terrain",
+    "id": "t_sunkenheli_window_w",
+    "name": "sunken helicopter window w",
+    "description": "Sunken helicopter window w description.",
+    "symbol": ".",
+    "color": "light_gray"
+  },
+  {
+    "type": "terrain",
+    "id": "t_sunkenheli_window_e",
+    "name": "sunken helicopter window e",
+    "description": "Sunken helicopter window e description.",
+    "symbol": ".",
+    "color": "light_gray"
+  },
+  {
+    "type": "terrain",
+    "id": "t_sunkenheli_door_vertical",
+    "name": "sunken helicopter vertical door",
+    "description": "Sunken helicopter vertical door description.",
+    "symbol": ".",
+    "color": "light_gray"
+  },
+  {
+    "type": "terrain",
+    "id": "t_sunkenheli_door_horizontal",
+    "name": "sunken helicopter horizontal door",
+    "description": "Sunken helicopter horizontal door description.",
+    "symbol": ".",
+    "color": "light_gray"
+  },
+  {
+    "type": "terrain",
+    "id": "t_sunkenheli_frame",
+    "name": "sunken helicopter walls",
+    "description": "Sunken helicopter walls description.",
+    "symbol": ".",
+    "color": "light_gray"
+  },
+  {
+    "type": "furniture",
+    "id": "f_sunkenheli_seat_rotating",
+    "name": "sunken helicopter seat",
+    "description": "Sunken helicopter seat description.",
+    "copy-from": "f_armchair",
+    "rotates_to": "MULCHFLOOR",
+    "symbol": ".",
+    "color": "light_gray"
+  }
+]
