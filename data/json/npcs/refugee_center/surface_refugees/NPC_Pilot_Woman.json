@@ -1,0 +1,64 @@
+[
+  {
+    "type": "npc",
+    "id": "pilot_woman",
+    "name_unique": "Pilot Woman",
+    "name_suffix": "Refugee",
+    "gender": "female",
+    "class": "NC_PILOT",
+    "attitude": 0,
+    "mission": 0,
+    "chat": "TALK_PILOT",
+    "faction": "no_faction"
+  },
+  {
+    "type": "npc_class",
+    "id": "NC_PILOT",
+    "name": { "str": "Pilot" },
+    "job_description": "I'm just piloting.",
+    "common": false,
+    "worn_override": "NC_PILOT_worn",
+    "traits": [ { "trait": "RETURN_TO_START_POS" } ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_PILOT_worn",
+    "subtype": "collection",
+    "items": [ { "item": "bra" }, { "item": "tank_top" }, { "item": "panties" } ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_PILOT",
+    "dynamic_line": "Talk topic",
+    "responses": [ { "text": "Hello.", "topic": "TALK_PILOT_NEW" } ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_PILOT_NEW",
+    "dynamic_line": "Talk new",
+    "responses": [ { "text": "Bye", "topic": "TALK_DONE" } ]
+  },
+  {
+    "id": "MISSION_PILOTWOMAN_INVESTIGATION",
+    "type": "mission_definition",
+    "name": { "str": "Find the missing crew." },
+    "description": "Crew and pilot woman were separated, she wants to know what happened to them.",
+    "difficulty": 1,
+    "value": 0,
+    "goal": "MGOAL_FIND_ITEM",
+    "item": "dog_tag",
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "has_generic_rewards": false,
+    "dialogue": {
+      "describe": "describe text",
+      "offer": "offer text",
+      "accepted": "accepted text",
+      "rejected": "rejected text",
+      "advice": "advice text",
+      "inquire": "inquire text",
+      "success": "success text",
+      "success_lie": "success_lie text",
+      "failure": "failure text"
+    }
+  }
+]

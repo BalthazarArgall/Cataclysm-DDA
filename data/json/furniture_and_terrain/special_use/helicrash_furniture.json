@@ -1,0 +1,72 @@
+[
+  {
+    "//": "These terrains are for generating a bullet trailer.  While they can be remixed in some ways, in general they will only fit with each other and will only produce a trailer in an east-west orientation with a south-facing door.  Furniture has to be made non-blocking and placed in the central path to work correctly.",
+    "type": "terrain",
+    "id": "t_sunkenheli_wa",
+    "name": "sunken helicopter walls",
+    "roof": "t_metal_flat_roof",
+    "description": "Sunken helicopter walls description.",
+    "symbol": ".",
+    "color": "light_gray",
+    "connect_groups": [ "INDOORFLOOR", "LINOLEUM" ],
+    "connects_to": "LINOLEUM",
+    "move_cost": 2,
+    "flags": [ "TRANSPARENT", "SUPPORTS_ROOF", "COLLAPSES", "INDOORS", "FLAT", "ROAD" ],
+    "bash": {
+      "sound": "SMASH!",
+      "ter_set": "t_null",
+      "str_min": 50,
+      "str_max": 400,
+      "str_min_supported": 100,
+      "items": [ { "item": "splinter", "count": [ 2, 8 ] }, { "item": "nail", "charges": [ 5, 10 ] } ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_sunkenheli_walls",
+    "name": "sunken helicopter walls",
+    "description": "Sunken helicopter walls description.",
+    "symbol": ".",
+    "color": "light_gray"
+  },
+  {
+    "type": "terrain",
+    "id": "t_sunkenheli_window",
+    "name": "sunken helicopter walls",
+    "description": "Sunken helicopter walls description.",
+    "symbol": ".",
+    "color": "light_gray"
+  },
+  {
+    "type": "terrain",
+    "id": "t_sunkenheli_cargospace",
+    "name": "sunken helicopter walls",
+    "description": "Sunken helicopter walls description.",
+    "symbol": ".",
+    "color": "light_gray"
+  },
+  {
+    "type": "terrain",
+    "id": "t_sunkenheli_door",
+    "name": "sunken helicopter walls",
+    "description": "Sunken helicopter walls description.",
+    "symbol": ".",
+    "color": "light_gray"
+  },
+  {
+    "type": "terrain",
+    "id": "t_sunkenheli_frame",
+    "name": "sunken helicopter walls",
+    "description": "Sunken helicopter walls description.",
+    "symbol": ".",
+    "color": "light_gray"
+  },
+  {
+    "type": "terrain",
+    "id": "t_sunkenheli_seat",
+    "name": "sunken helicopter walls",
+    "description": "Sunken helicopter walls description.",
+    "symbol": ".",
+    "color": "light_gray"
+  }
+]

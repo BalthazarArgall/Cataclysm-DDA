@@ -1,0 +1,44 @@
+[
+  {
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": "helicrash_omt",
+    "object": {
+      "fill_ter": "t_water_dp",
+      "rows": [
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "        03330           ",
+        "        34543           ",
+        "        00700           ",
+        "        78887           ",
+        "       0088800          ",
+        "       0388830          ",
+        "       0088800          ",
+        "       0388830          ",
+        "       0088800          ",
+        "       0388830          ",
+        "       0088800          ",
+        "       0388830          ",
+        "       0088800          ",
+        "       0088800          ",
+        "        08580           ",
+        "        07770           ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        "
+      ],
+      "terrain": {
+        "0": "t_sunkenheli_walls",
+        "3": "t_sunkenheli_window",
+        "4": "t_sunkenheli_seat",
+        "5": "t_sunkenheli_cargospace",
+        "7": "t_sunkenheli_door",
+        "8": "t_sunkenheli_cargospace"
+      }
+    }
+  }
+]

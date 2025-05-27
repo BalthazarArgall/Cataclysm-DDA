@@ -1,0 +1,11 @@
+[
+  {
+    "type": "overmap_terrain",
+    "id": "helicrash_omt",
+    "name": "helicrash name",
+    "sym": "L",
+    "color": "green",
+    "see_cost": "none",
+    "flags": [ "NO_ROTATE" ]
+  }
+]

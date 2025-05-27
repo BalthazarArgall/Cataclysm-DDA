@@ -309,6 +309,7 @@
         { "vehicle": "car_mini", "x": 99, "y": 15, "chance": 75, "rotation": 90 }
       ],
       "place_npcs": [
+        { "class": "pilot_woman", "x": 60, "y": 3 },
         { "class": "scavenger_merc", "x": 48, "y": 5 },
         { "class": "guard", "x": 39, "y": 4, "unique_id": "GUARD1" },
         { "class": "guard", "x": 36, "y": 7, "unique_id": "GUARD2" },
