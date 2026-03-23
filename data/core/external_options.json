@@ -1,5 +1,38 @@
 [
   {
+    "type": "option_slider",
+    "id": "world_difficulty",
+    "context": "WORLDGEN",
+    "name": "Difficulty",
+    "default": 0,
+    "levels": [
+      {
+        "level": 0,
+        "name": "Test1",
+        "description": "Monsters are much easier to deal with, and plenty of items can be found.",
+        "options": [
+          { "option": "MONSTER_SPEED", "type": "int", "val": 90 },
+          { "option": "MONSTER_RESILIENCE", "type": "int", "val": 75 },
+          { "option": "SPAWN_DENSITY", "type": "float", "val": 0.8 },
+          { "option": "EVOLUTION_INVERSE_MULTIPLIER", "type": "float", "val": 2 },
+          { "option": "ITEM_SPAWNRATE", "type": "float", "val": 1.5 }
+        ]
+      },
+      {
+        "level": 1,
+        "name": "Test2",
+        "description": "Monsters are weaker, appear in smaller numbers, and evolve at a slower rate.",
+        "options": [
+          { "option": "MONSTER_SPEED", "type": "int", "val": 100 },
+          { "option": "MONSTER_RESILIENCE", "type": "int", "val": 85 },
+          { "option": "SPAWN_DENSITY", "type": "float", "val": 0.9 },
+          { "option": "EVOLUTION_INVERSE_MULTIPLIER", "type": "float", "val": 1.5 },
+          { "option": "ITEM_SPAWNRATE", "type": "float", "val": 1 }
+        ]
+      }
+    ]
+  },
+  {
     "type": "EXTERNAL_OPTION",
     "name": "DISPERSION_PER_GUN_DAMAGE",
     "//": "Value that adds to weapon dispersion per weapon damage value.",
