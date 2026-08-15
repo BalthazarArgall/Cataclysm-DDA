@@ -546,5 +546,29 @@
         "run_eoc_selector": [ "EOC_DRAW_TAROT_FULL", "EOC_DRAW_TAROT_MAJOR" ]
       }
     ]
+  },
+  {
+    "id": "eoc_call",
+    "type": "effect_on_condition",
+    "effect": [ { "names": [ "Parents", "Taenia" ], "run_eoc_selector": [ "eoc_call_parents", "eoc_call_taenia" ] } ]
+  },
+  {
+    "id": "eoc_call_parents",
+    "type": "effect_on_condition",
+    "condition": { "math": [ "u_have_parents == true" ] },
+    "effect": { "u_message": "called parents" }
+  },
+  {
+    "id": "eoc_call_taenia",
+    "type": "effect_on_condition",
+    "condition": { "math": [ "taenia_callable == true" ] },
+    "effect": { "u_message": "called taenia" }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_call_test",
+    "eoc_type": "EVENT",
+    "required_event": "game_begin",
+    "effect": [ { "math": [ "u_have_parents = true" ] } ]
   }
 ]

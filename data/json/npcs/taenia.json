@@ -1,0 +1,82 @@
+[
+  {
+    "id": "talk_taenia_introduction_0",
+    "type": "talk_topic",
+    "dynamic_line": "&A second pass before you hear someone: \"Hello?\"",
+    "responses": [
+      { "text": "Hello?  Oh my god I'm so happy to hear you.", "topic": "talk_taenia_introduction_1a" },
+      { "text": "Hello?  Who are you?  Are you with the authorities?", "topic": "talk_taenia_introduction_1b" }
+    ],
+    "speaker_effect": { "effect": { "set_string_var": "talk_taenia_questions", "target_var": { "global_val": "taenia_next_topic" } } }
+  },
+  {
+    "id": "talk_taenia_introduction_1a",
+    "type": "talk_topic",
+    "dynamic_line": "Likewise, listen, you are in danger, there are monsters everywhere killing everyone they come across but I can guide you toward a shelter.",
+    "responses": [
+      { "text": "Fucking hell, I'm not sure I can make it, can you help?", "topic": "talk_taenia_introduction_1a1" },
+      { "text": "Alright, I'll try, where is it?", "topic": "talk_taenia_introduction_2" }
+    ]
+  },
+  {
+    "id": "talk_taenia_introduction_1b",
+    "type": "talk_topic",
+    "dynamic_line": "No sorry, I am part of a group of survivors, we're trying to guide people toward shelter, you are in danger, there are monsters everywhere killing everyone they come across.",
+    "responses": [ { "text": "Alright, I'll try, where is it?", "topic": "talk_taenia_introduction_2" } ]
+  },
+  {
+    "id": "talk_taenia_introduction_1a1",
+    "type": "talk_topic",
+    "dynamic_line": "I'm sorry, I really can't.",
+    "responses": [ { "text": "Alright, I'll try, where is it?", "topic": "talk_taenia_introduction_2" } ]
+  },
+  {
+    "id": "talk_taenia_introduction_2",
+    "type": "talk_topic",
+    "dynamic_line": "I sent you the location.  I don't have much time, do you need anything else?",
+    "responses": [ { "text": "Alright, I'll try, where is it?", "topic": "TALK_DONE" } ]
+  },
+  {
+    "id": "talk_taenia_introduction_3",
+    "type": "talk_topic",
+    "dynamic_line": "If you need help feel free to call, I'll be on standby.  Good luck.",
+    "responses": [ { "text": "Thanks.", "topic": "talk_taenia_introduction_4" } ]
+  },
+  {
+    "id": "talk_taenia_introduction_4",
+    "type": "talk_topic",
+    "dynamic_line": "Wait.  One last thing, you're <u_name> right?",
+    "responses": [ { "text": "Thanks.", "topic": "TALK_DONE" } ]
+  },
+  {
+    "id": "talk_taenia_questions_0",
+    "type": "talk_topic",
+    "dynamic_line": "&A second pass before you hear someone: \"Hello?\"",
+    "responses": [
+      { "text": "Hello?  Oh my god I'm so happy to hear you.", "topic": "talk_taenia_introduction_1a" },
+      { "text": "Hello?  Who are you?  Are you with the authorities?", "topic": "talk_taenia_introduction_1b" }
+    ]
+  },
+  {
+    "id": "talk_taenia_questions_0",
+    "type": "talk_topic",
+    "dynamic_line": "<u_name>?",
+    "responses": [ { "text": "I had a few questions.", "topic": "TALK_DONE" } ]
+  },
+  {
+    "id": "talk_taenia_questions_1",
+    "type": "talk_topic",
+    "dynamic_line": "I'm listening, what do you want to know?",
+    "responses": [ { "text": "I had a few questions.", "topic": "TALK_DONE" } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_taenia_talk_setup",
+    "effect": { "set_string_var": "talk_taenia_introduction_0", "target_var": { "global_val": "taenia_next_topic" } }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_taenia_talk",
+    "effect": { "open_dialogue": { "topic": { "global_val": "taenia_next_topic" } } }
+  }
+]

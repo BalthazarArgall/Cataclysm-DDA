@@ -1,0 +1,94 @@
+[
+  {
+    "id": "talk_taenia_introduction_0",
+    "type": "talk_topic",
+    "dynamic_line": "&A second pass before you hear someone: \"Hello?\"",
+    "responses": [
+      { "text": "Hello?  Oh my god I'm so happy to hear you.", "topic": "talk_taenia_introduction_1a" },
+      { "text": "Hello?  Who are you?  Are you with the authorities?", "topic": "talk_taenia_introduction_1b" }
+    ]
+  },
+  {
+    "id": "talk_taenia_introduction_1a",
+    "type": "talk_topic",
+    "dynamic_line": "Likewise, listen, you are in danger, there are monsters everywhere killing everyone they come across but I can guide you toward a shelter.",
+    "responses": [
+      { "text": "Fucking hell, I'm not sure I can make it, can you help?", "topic": "talk_taenia_introduction_1a1" },
+      { "text": "Alright, I'll try, where is it?", "topic": "talk_taenia_introduction_2" }
+    ]
+  },
+  {
+    "id": "talk_taenia_introduction_1b",
+    "type": "talk_topic",
+    "dynamic_line": "No sorry, I am part of a group of survivors, we're trying to guide people toward shelter, you are in danger, there are monsters everywhere killing everyone they come across.",
+    "responses": [ { "text": "Alright, I'll try, where is it?", "topic": "talk_taenia_introduction_2" } ]
+  },
+  {
+    "id": "talk_taenia_introduction_1a1",
+    "type": "talk_topic",
+    "dynamic_line": "I'm sorry, I really can't.",
+    "responses": [ { "text": "Alright, I'll try, where is it?", "topic": "talk_taenia_introduction_2" } ]
+  },
+  {
+    "id": "talk_taenia_introduction_2",
+    "type": "talk_topic",
+    "dynamic_line": "I sent you the location.  I don't have much time, do you need anything else?",
+    "responses": [ { "text": "Alright, I'll try, where is it?", "topic": "TALK_DONE" } ]
+  },
+  {
+    "id": "talk_taenia_introduction_3",
+    "type": "talk_topic",
+    "dynamic_line": "If you need help feel free to call, I'll be on standby.  Good luck.",
+    "responses": [ { "text": "Thanks.", "topic": "TALK_DONE" } ]
+  },
+  {
+    "id": "talk_taenia_hub",
+    "type": "talk_topic",
+    "dynamic_line": "<u_name>?",
+    "responses": [ { "text": "I need to ask you something.", "topic": "talk_taenia_questions" } ]
+  },
+  {
+    "id": "talk_taenia_questions",
+    "type": "talk_topic",
+    "dynamic_line": "I'm listening.",
+    "responses": [
+      { "text": "What are those things out there?", "topic": "TALK_DONE" },
+      {
+        "text": "How am I supposed to get to the shelter with those things lurking everywhere?",
+        "topic": "talk_taenia_question_shelter_travel_0"
+      }
+    ]
+  },
+  {
+    "id": "talk_taenia_question_shelter_travel_0",
+    "type": "talk_topic",
+    "dynamic_line": "$\"We have had a few people succeed sneaking by, it seems the creatures aren't fully aware of their surroundings, when they're just lurking I've seen them stumble into walls or stay immobile for minutes at a time, as long as you stay quiet and far away I'm pretty sure you could find a path through\".\n\"Alternatively you could try and find some kind of vehicle, the trams are stuck but a could work if you can find one\".\nShe marks a pause, \"before you go, please grab some kind of weapon, those things, they bleed same as us, as a last resort, if you're cornered or something you're gonna need to defend yourself\"",
+    "responses": [ { "text": "What are those things out there?", "topic": "TALK_DONE" } ]
+  },
+  {
+    "id": "talk_taenia_question_euzhvil",
+    "type": "talk_topic",
+    "dynamic_line": "I'm not sure.  There's been sightings",
+    "responses": [ { "text": "What are those things out there?", "topic": "TALK_DONE" } ]
+  },
+  {
+    "id": "talk_taenia_introduction_3",
+    "type": "talk_topic",
+    "dynamic_line": "If you need help feel free to call, I'll be on standby.  Good luck.",
+    "responses": [ { "text": "Thanks.", "topic": "TALK_DONE", "effect": { "math": [ "taenia_next_topic = talk_taenia_questions" ] } } ]
+  },
+  {
+    "type": "mutation",
+    "id": "hunvre_lexicon",
+    "name": { "str": "Lexicon" },
+    "description": "The words, what do they mean?",
+    "points": 1,
+    "active": true,
+    "activated_eocs": [ "eoc_open_lexicon" ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_open_lexicon",
+    "effect": { "u_message": "Teirrod: A small, mostly single-occupant vehicle.", "popup": true }
+  }
+]

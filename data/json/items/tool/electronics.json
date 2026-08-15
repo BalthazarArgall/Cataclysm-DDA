@@ -898,6 +898,7 @@
     "symbol": ";",
     "color": "light_gray",
     "use_action": [
+      { "type": "effect_on_conditions", "menu_text": "Call…", "effect_on_conditions": [ "eoc_call" ] },
       "E_FILE_DEVICE",
       "EBOOKSAVE",
       "CAMERA",
