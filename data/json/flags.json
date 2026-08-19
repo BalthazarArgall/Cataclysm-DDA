@@ -2521,6 +2521,11 @@
     "info": "You burn in the sunlight like a vampire, but not quite as badly."
   },
   {
+    "id": "DISTRIBUTED_DAMAGE",
+    "type": "json_flag",
+    "info": "Damage you take is split evenly between your limbs"
+  },
+  {
     "id": "SHREDDED",
     "type": "json_flag",
     "info": "This is a small fragment."
@@ -2729,6 +2734,11 @@
     "id": "INHALED_TOXIN_IMMUNE",
     "type": "json_flag",
     "info": "You are immune to gaseous toxins"
+  },
+  {
+    "id": "INFECTION_RECOVERY",
+    "type": "json_flag",
+    "info": "You have greater odds to recover from infections (equivalent to taking antibiotics)"
   },
   {
     "id": "TREE_COMMUNION_PLUS",
